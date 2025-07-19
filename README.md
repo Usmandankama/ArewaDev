@@ -1,16 +1,37 @@
-# arewa_dev
+# Arewa Dev
 
-A new Flutter project.
+**Gina gobe ta hanyar coding.**  
+_A simple, offline coding learning app made for the Arewa community._
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📱 About the App
 
-A few resources to get you started if this is your first Flutter project:
+**Arewa Dev** is an offline educational mobile app designed to teach the fundamentals of coding in Hausa and English. It includes multiple chapters, beginner-friendly lessons, and a clean user experience tailored for accessibility, even without internet access.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Features
+
+- 📘 20+ chapters covering foundational coding topics
+- 🌐 Offline-first experience
+- 🗣 Hausa + English explanation for better understanding
+- 🎯 Simple UI/UX for new learners
+- 🔖 Bookmark or continue lessons (future feature)
+- ❌ No login required – learn without barriers
+
+---
+
+## 🛠️ Tech Stack
+
+| Tool        | Purpose                 |
+|-------------|--------------------------|
+| Flutter     | Cross-platform development |
+| Dart        | Core programming language |
+| GetX        | State management          |
+| Custom JSON | Lesson data structure     |
+
+---
+
+## 📂 App Structure
+
