@@ -1,4 +1,5 @@
 import 'package:arewa_dev/screens/home/splash_screen.dart';
+import 'package:arewa_dev/screens/onboarding/onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -12,11 +13,10 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(360, 690),
       minTextAdapt: true,
-      
       child: MaterialApp(
         title: 'Custom Splash Demo',
         debugShowCheckedModeBanner: false,
-        home: const SplashScreen(),
+        home:  OnboardingScreen(),
       ),
     );
   }
