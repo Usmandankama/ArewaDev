@@ -1,5 +1,11 @@
+import 'package:arewa_dev/constants/colors.dart';
+import 'package:arewa_dev/screens/html/learn_html.dart';
 import 'package:arewa_dev/screens/onboarding/onboarding.dart';
+import 'package:arewa_dev/widgets/next_button.dart';
+import 'package:arewa_dev/widgets/section_container.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -11,28 +17,116 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const Icon(Icons.home, size: 100, color: Colors.blue),
-          const SizedBox(height: 20),
-          const Text(
-            'Welcome to Home Screen',
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-          ),
-          const SizedBox(height: 10),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) =>  OnboardingScreen(),
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
+      backgroundColor: AppColors.backgroundColor,
+      appBar: AppBar(
+        backgroundColor: AppColors.backgroundColor,
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            IconButton(
+              icon: Icon(Icons.menu, color: Colors.white, size: 30.sp),
+              onPressed: () {
+                // Handle menu button press
+              },
+            ),
+            CircleAvatar(
+              radius: 20.sp,
+              backgroundImage: AssetImage('assets/images/avatar1.jpeg'),
+            ),
+          ],
+        ),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Welcome, ',
+              style: GoogleFonts.playfairDisplay(
+                color: AppColors.textPrimary,
+                fontSize: 32.sp,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              'Usman Dankama, ',
+              style: GoogleFonts.playfairDisplay(
+                color: AppColors.textPrimary,
+                fontSize: 32.sp,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 50.h),
+            Expanded(
+              child: GridView(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  mainAxisSpacing: 10.h,
+                  crossAxisSpacing: 10.w,
+                  childAspectRatio: .9,
                 ),
-              );
-            },
-            child: const Text('Click Me'),
-          ),
-        ],
+                children: [
+                  SectionContainer(
+                    imagePath: 'assets/icons/html.png',
+                    containerHeight: 120,
+                    containerWidth: 150,
+                    title: 'Web Development',
+                    subtitle: 'Learn HTML',
+                    sectionColor: AppColors.primaryColor,
+                    nextScreen: LearnHtml(),
+                  ),
+                  SectionContainer(
+                    imagePath: 'assets/icons/css.png',
+                    containerHeight: 200,
+                    containerWidth: 150,
+                    title: 'Mobile Development',
+                    subtitle: 'Learn Flutter',
+                    sectionColor: AppColors.accentBlue,
+                    nextScreen: LearnHtml(),
+                  ),
+                  SectionContainer(
+                    imagePath: 'assets/icons/timer.png',
+                    containerHeight: 200,
+                    containerWidth: 150,
+                    title: 'Challenges & Quizzes',
+                    subtitle: 'Test your skills with quick, interactive HTML & CSS challenges.',
+                    sectionColor: AppColors.accentPurple,
+                    nextScreen: OnboardingScreen(),
+                  ),
+
+                  SectionContainer(
+                    imagePath: 'assets/icons/projects.png',
+                    containerHeight: 120,
+                    containerWidth: 150,
+                    title: 'Web Development',
+                    subtitle: 'Learn HTML',
+                    sectionColor: AppColors.secondaryColor,
+                    nextScreen: LearnHtml(),
+                  ),
+                ],
+                // Row(
+                //   // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                //   crossAxisAlignment: CrossAxisAlignment.start,
+                //   children: [
+
+                //   ],
+                // ),
+
+                //   SizedBox(height: 10.h),
+                //   Row(
+                //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                //     crossAxisAlignment: CrossAxisAlignment.start,
+                //     children: [
+
+                //     ],
+                //   ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
