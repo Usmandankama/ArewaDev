@@ -1,6 +1,7 @@
 import 'package:arewa_dev/constants/colors.dart';
 import 'package:arewa_dev/screens/html/learn_html.dart';
 import 'package:arewa_dev/screens/onboarding/onboarding.dart';
+import 'package:arewa_dev/widgets/chapters.dart';
 import 'package:arewa_dev/widgets/next_button.dart';
 import 'package:arewa_dev/widgets/section_container.dart';
 import 'package:flutter/material.dart';
@@ -76,7 +77,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     title: 'Web Development',
                     subtitle: 'Learn HTML',
                     sectionColor: AppColors.primaryColor,
-                    nextScreen: LearnHtml(),
+                    nextScreen: ChapterListPage(),
                   ),
                   SectionContainer(
                     imagePath: 'assets/icons/css.png',
@@ -85,7 +86,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     title: 'Mobile Development',
                     subtitle: 'Learn Flutter',
                     sectionColor: AppColors.accentBlue,
-                    nextScreen: LearnHtml(),
+                    nextScreen: ChapterListPage(),
                   ),
                   SectionContainer(
                     imagePath: 'assets/icons/timer.png',
@@ -104,7 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     title: 'Web Development',
                     subtitle: 'Learn HTML',
                     sectionColor: AppColors.secondaryColor,
-                    nextScreen: LearnHtml(),
+                    nextScreen: ChapterListPage(),
                   ),
                 ],
                 // Row(
