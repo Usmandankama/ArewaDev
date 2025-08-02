@@ -1,4 +1,6 @@
 import 'package:arewa_dev/constants/colors.dart';
+import 'package:arewa_dev/screens/community/community_page.dart';
+import 'package:arewa_dev/screens/editor/offline_editor.dart';
 import 'package:arewa_dev/screens/html/learn_html.dart';
 import 'package:arewa_dev/screens/onboarding/onboarding.dart';
 import 'package:arewa_dev/widgets/chapters.dart';
@@ -80,32 +82,34 @@ class _HomeScreenState extends State<HomeScreen> {
                     nextScreen: ChapterListPage(),
                   ),
                   SectionContainer(
-                    imagePath: 'assets/icons/css.png',
-                    containerHeight: 200,
-                    containerWidth: 150,
-                    title: 'Mobile Development',
-                    subtitle: 'Learn Flutter',
-                    sectionColor: AppColors.accentBlue,
-                    nextScreen: ChapterListPage(),
-                  ),
-                  SectionContainer(
                     imagePath: 'assets/icons/timer.png',
                     containerHeight: 200,
                     containerWidth: 150,
                     title: 'Challenges & Quizzes',
-                    subtitle: 'Test your skills with quick, interactive HTML & CSS challenges.',
+                    subtitle:
+                        'Test your skills with quick, interactive HTML & CSS challenges.',
                     sectionColor: AppColors.accentPurple,
                     nextScreen: OnboardingScreen(),
+                  ),
+                  SectionContainer(
+                    imagePath: 'assets/icons/css.png',
+                    containerHeight: 200,
+                    containerWidth: 150,
+                    title: 'Join the Community',
+                    subtitle: 'Learn and grow with others.',
+                    sectionColor: AppColors.accentBlue,
+                    nextScreen: CommunityPage(),
                   ),
 
                   SectionContainer(
                     imagePath: 'assets/icons/projects.png',
                     containerHeight: 120,
                     containerWidth: 150,
-                    title: 'Web Development',
-                    subtitle: 'Learn HTML',
+                    title: 'Code Editor',
+                    subtitle:
+                        'Write and run your HTML code directly in the app.',
                     sectionColor: AppColors.secondaryColor,
-                    nextScreen: ChapterListPage(),
+                    nextScreen: HtmlEditorPage(),
                   ),
                 ],
                 // Row(
