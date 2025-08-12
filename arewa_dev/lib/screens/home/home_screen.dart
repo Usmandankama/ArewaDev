@@ -1,4 +1,5 @@
 import 'package:arewa_dev/constants/colors.dart';
+import 'package:arewa_dev/screens/challenges/challenges_screen.dart';
 import 'package:arewa_dev/screens/community/community_page.dart';
 import 'package:arewa_dev/screens/editor/offline_editor.dart';
 import 'package:arewa_dev/screens/html/learn_html.dart';
@@ -89,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     subtitle:
                         'Test your skills with quick, interactive HTML & CSS challenges.',
                     sectionColor: AppColors.accentPurple,
-                    nextScreen: OnboardingScreen(),
+                    nextScreen: ChallengesScreen(),
                   ),
                   SectionContainer(
                     imagePath: 'assets/icons/css.png',

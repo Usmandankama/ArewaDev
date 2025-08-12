@@ -7,7 +7,6 @@ class ChapterModel {
   final String? code;
   final ExampleModel example;
 
-  // final String displayTitle;
 
   ChapterModel({
     required this.id,
@@ -25,7 +24,6 @@ class ChapterModel {
       content: json['content'],
       code: json['code'],
       example: ExampleModel.fromJson(json['example']),
-      // displayTitle: json['displayTitle'],
     );
   }
 }

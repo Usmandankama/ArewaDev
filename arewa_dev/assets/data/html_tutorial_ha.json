@@ -17,7 +17,7 @@
     "example": {
         "title": "misalin tsarin html",
         "display_title": "Misalin Tsarin HTML",
-        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>My Website</title>\n  </head>\n  <body>\n    <h1>Hello, World!</h1>\n    <p>Welcome to my first web page.</p>\n  </body>\n</html>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>My Website</title>\n  </head>\n  <body>\n    <h1>Hello, World!</h1>\n   <p>Welcome to my first web page.</p>\n  </body>\n</html>",
         "explanation": "Wannan misali yana nuna tsarin asalin wani takardar HTML. Sashin <head> yana dauke da taken shafin, sannan <body> yana dauke da dukkan abubuwan da masu amfani za su gani. Dukkan shafin HTML ya kamata ya bi wannan tsarin domin ya yi aiki yadda ya kamata."
     }
     },
@@ -48,7 +48,6 @@
     {
         "id": 5,
         "title": "Headings da Paragraphs",
-        "displayTitle": "Headings da Paragraphs",
         "content": "Headings da paragraphs ana amfani da su ne wajen tsara rubutu a cikin shafin yanar gizo. Headings suna sanya rubutu ya fi girma kuma ya fi bayyana, ana yawan amfani da su a matsayin take da sunayen sashe. Paragraphs kuma suna dauke da rubutun al’ada.\n\nAkwai matakai guda shida na headings a HTML:\n- <h1> shine mafi girma kuma mafi muhimmanci\n- <h6> shine mafi kankanta\n\nYa kamata ka yi amfani da headings a cikin tsari, ka fara da <h1> don manyan take, sannan <h2> don kan-take, da dai sauransu.\n\nAna amfani da <p> don kirkirar paragraph. Ana amfani da shi don rubutu mai tsawo, kamar bayani ko karin haske. Browsers suna kara sarari kai tsaye a gaban da bayan paragraph.",
         "example": {
             "title": "headingParagraphExample",
@@ -59,8 +58,7 @@
     },
     {
     "id": 6,
-    "title": "Formatting Text",
-    "displayTitle": "Yadda Ake Yin Kwalliya Ga Rubutu",
+    "title": "Yadda Ake Yin Kwalliya Ga Rubutu",
     "content": "HTML yana ba ka damar yin wa rubutu kwalliya ta yadda zai bambanta ko ya bayyana cikin wani salo dabam. Za ka iya sa rubutu ya kasance mai kauri (bold), layi (italic), karkace, ko ƙanana. Wannan yana taimakawa wajen jaddada muhimmanci ko canza yadda rubutu ke bayyana.\n\nGa wasu daga cikin abubuwan kwalliyar rubutu:\n- <strong> ko <b> – yana sa rubutu ya zama mai kauri\n- <em> ko <i> – yana sa rubutu ya zama karkace\n- <u> – yana saka layi a ƙarƙashin rubutu\n- <small> – yana rage girman rubutu\n- <mark> – yana haskaka rubutu\n\nWannan kwalliya ana yin ta ne ta saka waɗannan tags a kusa da rubutun da ake son yi wa kwalliya. Ana yawan amfani da su a cikin sakin layi ko kanun labari.",
     "example": {
         "title": "formattingTextExample",
@@ -71,8 +69,7 @@
     },
     {
         "id": 7,
-        "title": "Hanyoyi da Maƙallan Shafi",
-        "displayTitle": "Hanyoyi da Maƙallan Shafi",
+        "title": "Hanyoyi da Makallan Shafi",
         "content": "Hanyoyi suna ba masu amfani damar zuwa daga shafi ɗaya zuwa wani. A HTML, ana ƙirƙirar hanyoyi da alamar <a>. Harafin 'a' yana nufin 'anchor' (maƙalli). Ana amfani da sifar href domin bayyanar da inda burauzan zai tafi.\n\nTsarin asali:\n<a href=\"URL\">Rubutun Hanya</a>\n\nIdan mai amfani ya danna rubutun hanyar, zai buɗe URL ɗin. Za ka iya amfani da hanyoyi don zuwa wasu gidajen yanar gizo, buɗe fayiloli, ko tsalle zuwa wani ɓangare na shafi ɗaya.",
         "example": {
             "title": "misalinHanya",
@@ -83,8 +80,7 @@
     },
     {
         "id": 8,
-        "title": "Hotuna",
-        "displayTitle": "Hotuna a cikin HTML",
+        "title": "Hotuna a cikin HTML",
         "content": "Za ka iya saka hoto a cikin shafinka ta amfani da alamar <img>. Wannan alamar tana nuna hoto daga fayil ko adireshi (URL). Sabanin wasu alamomi, <img> ba ta da alamar rufe ta, wato self-closing ce.\n\nManyan siffofi guda biyu da ake amfani da su sune:\n- src: Wurin da hoton yake (URL ko hanyar fayil)\n- alt: Rubutun madadin wanda zai bayyana idan hoton bai loda ba. Hakanan yana taimaka wa masu amfani da na'urorin karanta allo.\n\nHotuna na sa shafukan yanar gizo su kasance masu kayatarwa da ban sha'awa. Ka tabbata ka saka hanyar fayil ɗin daidai.",
         "example": {
             "title": "imageExample",
@@ -107,8 +103,7 @@
     },
     {
     "id": 10,
-    "title": "htmlLinks",
-    "displayTitle": "Hanyoyin HTML",
+    "title": "Mahadar yanar gizo a HTML",
     "content": "Hanyoyi (links) suna bai wa masu amfani damar motsawa daga shafi zuwa wani. A HTML, ana ƙirƙirar hanyoyi ta amfani da alamar <a>, wanda ke nufin 'anchor'.\n\nAlamar <a> tana amfani da ƙarin href don bayyana inda hanyar ke nufi (URL). Masu amfani za su iya danna rubutun hanyar domin buɗe wani shafi ko fayil.\n\nZa ka iya haɗa da wasu gidajen yanar gizo ko kuma zuwa wasu sassa na shafinka.",
     "example": {
         "title": "linkExample",
@@ -120,8 +115,7 @@
 
     {
         "id": 11,
-        "title": "htmlTables",
-        "displayTitle": "HTML Tables",
+        "title": "Tabura a cikin HTML",
         "content": "Jadawali ana amfani da su ne don nuna bayanai a layuka da ginshiƙai. A HTML, ana ƙirƙirar jadawali ta amfani da alamar <table>. A cikin tebur, <tr> tana nuna layi, <th> tana nuna cell ɗin take, sannan <td> tana nuna cell ɗin bayanai na yau da kullum.\n\nJadawali suna taimakawa wajen tsara abun ciki kamar jadawalin lokaci, farashi, ko jerin abubuwa cikin tsari mai kyau.",
         "example": {
         "title": "tableExample",
@@ -132,8 +126,7 @@
     },
     {
         "id": 12,
-        "title": "htmlDiv",
-        "displayTitle": "HTML <div> Tag",
+        "title": "Sassa na HTML (div)",
         "content": "Alamar <div> wata alama ce ta matakin block wadda ake amfani da ita wajen haɗa abubuwan HTML wuri guda. Yana taimakawa wajen tsara shafin ka da kuma amfani da salo ko tsarin zane cikin sauƙi. Yi tunanin <div> kamar akwati ne da ke riƙe da wasu abubuwa.\n\nBa ya canza yadda abubuwa suke bayyana da kansa, amma yana da matuƙar amfani idan ana zane da ƙawata shafukan yanar gizo.",
         "example": {
         "title": "divExample",
@@ -144,8 +137,7 @@
     },
     {
         "id": 13,
-        "title": "htmlForms",
-        "displayTitle": "HTML Forms da Shigar Bayanai",
+        "title": "HTML Forms da Shigar da bayanai",
         "content": "HTML forms na ba masu amfani damar shigar da bayanai, kamar suna, imel, ko kalmar sirri. Ana amfani da forms idan kana so ka tara bayani daga masu amfani ka tura shi zuwa uwar garke.\n\n<form> tag tana rufe duk abubuwan da ke cikin form. A cikin form, ana amfani da nau’o’in <input> daban-daban kamar text, email, password, da sauransu.",
         "example": {
         "title": "formExample",
@@ -156,8 +148,7 @@
     },
     {
         "id": 14,
-        "title": "htmlCss",
-        "displayTitle": "HTML da CSS",
+        "title": "HTML da CSS",
         "content": "HTML na ƙirƙirar tsarin shafin yanar gizo — kamar taken shafi, rubutu, da hotuna. CSS (Cascading Style Sheets) na bada salon shafi — canza launi, nau'in rubutu, girma, da tsari.\n\nZa ka iya rubuta CSS a cikin HTML ta amfani da <style> tag, ko haɗa wani fayil daban na CSS ta amfani da <link>.",
         "example": {
         "title": "cssExample",
@@ -168,8 +159,7 @@
     },
     {
         "id": 15,
-        "title": "addingStylesheets",
-        "displayTitle": "Ƙara Stylesheets",
+        "title": "Amfani da Stylesheets",
         "content": "Stylesheet fayil ne da ke ɗauke da lambar CSS. Za ka iya haɗa fayil ɗin CSS da HTML ɗinka don daidaito. Wannan ana kiransa external stylesheet.\n\nAmfani da stylesheet yana sauƙaƙa wa don kayyade salo iri ɗaya a shafuka da dama.",
         "example": {
         "title": "linkStylesheetExample",
@@ -180,8 +170,7 @@
     },
     {
         "id": 16,
-        "title": "practiceProject",
-        "displayTitle": "Aikin Aiki",
+        "title": "Aiyukan yi",
         "content": "Mu gina karamin shafin yanar gizo na kanka ta amfani da duk abin da ka koya zuwa yanzu. Wannan zai hada da headings, paragraphs, hotuna, links, tebur, da fom ɗin tuntuɓa.",
         "steps": [
         {
@@ -214,16 +203,14 @@
         }
         ],
         "example": {
-        "title": "projectExample",
-        "displayTitle": "Samfurin Lambar Misali",
+        "title": "Samfurin Lambar Misali",
         "code": "<!DOCTYPE html>\n<html>\n<head>\n  <title>My Webpage</title>\n  <link rel=\"stylesheet\" href=\"style.css\">\n</head>\n<body>\n  <h1>Jane Doe</h1>\n  <p>Hello! I'm learning HTML.</p>\n  <img src=\"profile.jpg\" alt=\"My Profile Picture\">\n  <table>\n    <tr><th>Hobby</th><th>Description</th></tr>\n    <tr><td>Reading</td><td>I love reading novels.</td></tr>\n  </table>\n  <a href=\"https://example.com\">Visit my blog</a>\n  <form>\n    <input type=\"text\" placeholder=\"Your name\">\n    <textarea placeholder=\"Your message\"></textarea>\n    <button type=\"submit\">Send</button>\n  </form>\n</body>\n</html>",
         "explanation": "Wannan misali yana nuna yadda zaka haɗa duk abin da ka koya don ƙirƙirar shafin yanar gizo na gaske."
         }
     },
     {
         "id": 17,
-        "title": "bestPractices",
-        "displayTitle": "Kyawawan Dabaru",
+        "title": "Kyawawan Dabaru",
         "content": "Bin kyawawan dabaru yana taimaka maka ka rubuta tsabtaccen, karantacce, kuma mai sauƙin fahimta na HTML. Ga wasu shawarwari da za ka riƙa bi yayin da kake ci gaba da koya da gina shafuka.",
         "steps": [
         {

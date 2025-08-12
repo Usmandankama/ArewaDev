@@ -11,7 +11,7 @@ class ExampleModel {
 
   factory ExampleModel.fromJson(Map<String, dynamic> json) {
     return ExampleModel(
-      title: json['title'],
+      title: json['displayTitle'] ?? json['title'],
       code: json['code'],
       explanation: json['explanation'],
     );

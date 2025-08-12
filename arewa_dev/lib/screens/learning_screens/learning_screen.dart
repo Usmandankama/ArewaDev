@@ -30,7 +30,19 @@ class LearningScreen extends StatelessWidget {
                   fontSize: 18.sp,
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 20.h),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  data.example.title.toUpperCase(),
+                  style: GoogleFonts.montserrat(
+                    color: AppColors.primaryColor,
+                    fontSize: 18.sp,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              SizedBox(height: 10.h),
               HighlightView(
                 tabSize: 2,
                 data.example.code,
