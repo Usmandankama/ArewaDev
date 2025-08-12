@@ -24,7 +24,6 @@ class SectionContainer extends StatefulWidget {
   @override
   State<SectionContainer> createState() => _SectionContainerState();
 }
-
 class _SectionContainerState extends State<SectionContainer> {
   @override
   Widget build(BuildContext context) {
@@ -58,20 +57,6 @@ class _SectionContainerState extends State<SectionContainer> {
               style: GoogleFonts.montserrat(color:  AppColors.textSecondary, fontSize: 12.sp,fontWeight: FontWeight.w300),
             ),
             SizedBox(height: 10.h),
-            // Row(
-            //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //   children: [
-            //     Image.asset(widget.imagePath, height: 50.h, width: 40.w),
-            //     NextButton(
-            //       onPressed: () {
-            //         Navigator.push(
-            //           context,
-            //           MaterialPageRoute(builder: (context) => widget.nextScreen),
-            //         );
-            //       },
-            //     ),
-            //   ],
-            // ),
           ],
         ),
       ),
