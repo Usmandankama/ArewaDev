@@ -1,276 +1,245 @@
-[
     {
-    "id": 1,
-    "title": "Introduction to HTML",
-    "content": "HTML stands for HyperText Markup Language. It is the basic language used to create websites. HTML helps you put text, images, links, videos, and more on a webpage. It tells the browser how to display the content. HTML uses special codes called 'tags' to do this. Every website you see is built with HTML, even big ones like Google or Facebook. Learning HTML is the first step to becoming a web developer.",
-    "example": {
-    "title": "Basic HTML Page",
-    "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>My First Page</title>\n  </head>\n  <body>\n    <h1>Hello, world!</h1>\n    <p>This is my first HTML page.</p>\n  </body>\n</html>",
-    "explanation": "This is a simple HTML page. The <html> tag wraps the whole page. The <head> part contains the title, and the <body> contains the visible content like headings and paragraphs."
-    }
-},
-    {
-    "id": 2,
-    "title": "Basic structure",
-    "display_title": "Basic Structure of an HTML Page",
-    "content": "Every HTML page follows a standard structure that helps web browsers understand and display the content correctly. This structure is like the skeleton of your webpage. It starts with a special line called the doctype, then includes important tags like <html>, <head>, and <body>.\n\nHere’s a breakdown of each part:\n\n1. <!DOCTYPE html> – This tells the browser that you are writing in HTML5.\n2. <html> – This tag wraps the entire HTML page. It is the root element.\n3. <head> – This section is not shown on the page. It contains information about the page like its title and links to CSS files or fonts.\n4. <title> – The title appears on the browser tab. It is placed inside the <head>.\n5. <body> – This is where you put everything that you want the user to see like headings, text, images, and buttons.\n\nIt’s important to always follow this structure when creating an HTML page.",
-    "example": {
-    "title": "html structure example",
-    "display_title": "HTML Structure Example",
-    "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>My Website</title>\n  </head>\n  <body>\n    <h1>Hello, World!</h1>\n    <p>Welcome to my first web page.</p>\n  </body>\n</html>",
-    "explanation": "This example shows the basic structure of an HTML document. The <head> part contains the page title, and the <body> contains the content that will be visible to users. Every HTML page should follow this layout to work correctly."
-    }
-    },
-    {
-    "id": 3,
-    "title": "Html Tags",
-    "displayTitle": "HTML Tags",
-    "content": "HTML tags are the building blocks of a web page. They tell the browser how to display the content. A tag is written inside angle brackets, like <p> for a paragraph. Most tags come in pairs: an opening tag and a closing tag. The closing tag has a slash before the name, like </p>.\n\nExample: <p>Hello</p> will show the word 'Hello' as a paragraph.\n\nThere are many tags in HTML. Each tag has its own purpose. Some common tags are:\n\n- <h1> to <h6> for headings\n- <p> for paragraphs\n- <a> for links\n- <img> for images\n- <div> for sections or containers\n\nSome tags do not need a closing tag. These are called self-closing tags. For example, <br> adds a line break, and <img> adds an image.",
-    "example": {
-    "title": "tagExample",
-    "displayTitle": "HTML Tag Example",
-    "code": "<h1>My Website</h1>\n<p>This is my first paragraph.</p>\n<br>\n<img src=\"logo.png\" alt=\"Website Logo\">",
-    "explanation": "This example uses several tags: a heading <h1>, a paragraph <p>, a line break <br>, and an image <img>. Each tag tells the browser how to display something on the page."
-    }   
-    },
-    {
-    "id": 4,
-    "title": "HTML Elements",
-    "displayTitle": "HTML Elements",
-    "content": "An HTML element is everything between the opening and closing tags, including the content inside. It tells the browser what the content is and how it should be displayed. For example, in <p>Hello</p>, the element is the full line: opening tag <p>, the word 'Hello', and closing tag </p>.\n\nMost elements follow this format:\n<tagname> content goes here </tagname>\n\nThere are also self-closing elements, which don’t have closing tags. These include <br> for line breaks and <img> for images.\n\nHTML elements can be placed inside other elements. This is called nesting. For example, you can place a <strong> tag inside a <p> tag to make part of the paragraph bold.",
-    "example": {
-    "title": "elementExample",
-    "displayTitle": "HTML Element Example",
-    "code": "<p>This is a <strong>bold</strong> word inside a paragraph.</p>",
-    "explanation": "The <p> tag wraps the whole paragraph. Inside it, the <strong> tag makes the word 'bold' appear bold. This shows how elements can be nested to create more structure."
-    }   
-    },
-    {
-        "id": 5,
-        "title": "Headings and Paragraphs",
-        "displayTitle": "Headings and Paragraphs",
-        "content": "Headings and paragraphs are used to organize text on a web page. Headings make the text bigger and bolder, often used for titles and section names. Paragraphs are used for normal text.\n\nThere are six levels of headings in HTML:\n- <h1> is the biggest and most important\n- <h6> is the smallest\n\nYou should use headings in order, starting from <h1> for main titles, then <h2> for subheadings, and so on.\n\nParagraphs are created using the <p> tag. They are used for blocks of text, like descriptions or explanations. Browsers automatically add some space before and after a paragraph.",
-        "example": {
-        "title": "headingParagraphExample",
-        "displayTitle": "Headings and Paragraph Example",
-        "code": "<h1>Welcome to My Website</h1>\n<h2>About Me</h2>\n<p>My name is Aisha. I love web development and design.</p>\n<h2>Projects</h2>\n<p>Here are some of my recent works.</p>",
-        "explanation": "This example uses <h1> for the main title, <h2> for section headings, and <p> for paragraph text. It helps break the page into clear, readable sections."
-    }
-    },
-    {
-        "id": 6,
-        "title": "Formatting Text",
-        "displayTitle": "Formatting Text",
-        "content": "HTML allows you to format text to make it look different. You can make text bold, italic, underlined, or even small. These formats help you highlight important parts or change how the text appears.\n\nHere are some common formatting tags:\n- <strong> or <b> – makes text bold\n- <em> or <i> – makes text italic\n- <u> – underlines the text\n- <small> – makes the text smaller\n- <mark> – highlights the text\n\nThese tags are placed around the text you want to format. They are often used inside paragraphs or headings.",
-        "example": {
-            "title": "formattingTextExample",
-            "displayTitle": "Formatting Text Example",
-            "code": "<p>This is a <strong>bold</strong> word, an <em>italic</em> word, and an <u>underlined</u> word.</p>\n<p>You can also <mark>highlight</mark> important points.</p>",
-            "explanation": "In this example, <strong> makes text bold, <em> makes it italic, <u> adds an underline, and <mark> highlights it. These tags help style your content to make it more readable and clear."
-    }
-    },
-    {
-        "id": 7,
-        "title": "Links and Anchors",
-        "displayTitle": "Links and Anchors",
-        "content": "Links allow users to go from one page to another. In HTML, links are created using the <a> tag. The 'a' stands for 'anchor'. You add a link using the href attribute, which tells the browser where to go.\n\nBasic format:\n<a href=\"URL\">Link Text</a>\n\nWhen a user clicks the link text, it opens the URL. You can use links to go to other websites, open files, or jump to different parts of the same page.",
-        "example": {
-            "title": "linkExample",
-            "displayTitle": "Link Example",
-            "code": "<p>Visit <a href=\"https://www.google.com\">Google</a> for more info.</p>\n<p><a href=\"#top\">Go to Top</a></p>",
-            "explanation": "The first link takes the user to Google. The second link is an anchor link that jumps to a part of the same page with the ID 'top'. The href attribute is used to define the link target."
-    }
-    },
-    {
-        "id": 8,
-        "title": "Images",
-        "displayTitle": "Images in HTML",
-        "content": "You can add pictures to your web page using the <img> tag. This tag shows an image from a file or a link. Unlike other tags, <img> is self-closing, which means it doesn't need a closing tag.\n\nThe two main attributes for images are:\n- src: The source of the image (URL or file path)\n- alt: Alternative text that appears if the image can't load. It also helps screen readers describe the image.\n\nImages make your web pages more fun and interesting. Just make sure the file path is correct.",
-        "example": {
-            "title": "imageExample",
-            "displayTitle": "Image Example",
-            "code": "<img src=\"logo.png\" alt=\"Website Logo\">\n<br>\n<img src=\"https://example.com/photo.jpg\" alt=\"A beautiful view\">",
-            "explanation": "The first image loads a local file called 'logo.png'. The second image loads from an online URL. The alt text describes the image and is helpful for users who can't see it."
-    }
-    },
-    {
-        "id": 9,
-        "title": "Lists",
-        "displayTitle": "HTML Lists",
-        "content": "Lists are used to show information in a clean, organized way. HTML has two main types of lists:\n\n1. Ordered List: Items are shown in a numbered sequence using the <ol> tag.\n2. Unordered List: Items are shown with bullet points using the <ul> tag.\n\nEach item in a list uses the <li> tag, which stands for 'list item'. Lists help make content easier to read and understand.",
-        "example": {
-            "title": "listExample",
-            "displayTitle": "List Example",
-            "code": "<h3>Ordered List:</h3>\n<ol>\n  <li>Learn HTML</li>\n  <li>Practice daily</li>\n  <li>Build projects</li>\n</ol>\n\n<h3>Unordered List:</h3>\n<ul>\n  <li>Milk</li>\n  <li>Bread</li>\n  <li>Eggs</li>\n</ul>",
-            "explanation": "The first list uses <ol> for steps with numbers. The second list uses <ul> for items with bullet points. Each item is inside <li> tags."
-        }
-    },
+    "chapters": [
+        {
+        "id": 1,
+        "title": "Introduction to HTML",
+        "unlocked": true,
+        "content": [
+            {
+            "page": 1,
+            "title": "What is HTML?",
+            "content": [
+                {
+                "type": "text",
+                "title": "HTML Introduction",
+                "value": "HTML stands for HyperText Markup Language. It is the standard language for creating web pages. \n HTML describes the structure of a webpage using markup. \n It consists of a series of elements that tell the browser how to display content."
+                }
+            ]
+            },
+            {
+            "page": 2,
+            "title": "Why Use HTML?",
+            "content": [
+                {
+                    "type": "text",
+                    "title": "HTML Documents",
+                    "value": "HTML is essential for web development. It allows you to create structured documents that can be displayed in web browsers. \n\nWith HTML, you can:\n- Create headings, paragraphs, links, images, and other content\n- Structure your content with lists and tables\n- Embed multimedia elements like videos and audio\n- Create forms for user input"
+                }
+            ]
+            },
+            {
+            "page": 3,
+            "title": "A Simple HTML Document",
+            "content": [
+                {
+                "type": "snippet",
+                "title": "HTML Example",
+                "value": "<!DOCTYPE html>\n<html>\n<head>\n<title>Page Title</title>\n</head>\n<body>\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n</body>\n</html>"
+                },
 
-    {
-        "id": 10,
-        "title": "htmlLinks",
-        "displayTitle": "HTML Links",
-        "content": "Links allow users to move from one page to another. In HTML, links are created using the <a> tag, which stands for 'anchor'.\n\nThe <a> tag uses the href attribute to define the destination (URL) of the link. Users can click the link text to open a webpage or file.\n\nYou can link to other websites or to different sections within your own website.",
-        "example": {
-            "title": "linkExample",
-            "displayTitle": "Link Example",
-            "code": "<p>Visit our <a href=\"https://example.com\">Homepage</a>.</p>\n<p>Email us at <a href=\"mailto:info@example.com\">info@example.com</a>.</p>",
-            "explanation": "The first link opens a website. The second uses 'mailto:' to open the user's email app. The text between <a> and </a> is what users click on."
+                {
+                "type": "text",
+                "title": "Example Explanation",
+                "value": "The <!DOCTYPE html> declaration defines that this document is an HTML5 document\nThe <html> element is the root element of an HTML page\nThe <head> element contains meta information about the HTML page\nThe <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)\nThe <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.\nThe <h1> element defines a large heading\nThe <p> element defines a paragraph"
+                }
+            ]
+            },
+            {
+            "page": 4,
+            "title": "What is an HTML Element?",
+            "content": [
+                {
+                "type": "text",
+                "title": "HTML Elements",
+                "value": "An HTML element is defined by a start tag, some content, and an end tag:\n\nFor example, <p>This is a paragraph.</p> is a paragraph element. \nThe <p> is the start tag, and </p> is the end tag. The content is 'This is a paragraph.'\n\nSome elements can be self-closing, like <img /> or <br />."
+                }
+            ]
+            }
+        ]
+        },
+        {
+        "id":2,
+        "title": "Basic HTML",
+        "unlocked": true,
+        "content": [
+            {
+                "page": 1,
+                "title": "HTML Basic Examples",
+                "content": [
+                    {
+                    "type": "text",
+                    "value": "In this chapter we will show some basic HTML examples.\nDon't worry if we use tags you have not learned about yet. They will be explained in later chapters.\n\nYou can try these examples in your own HTML files or in an online HTML editor."
+                    },
+                    {
+                        "type": "text",
+                        "title": "HTML Documents",
+                        "value": "All HTML documents must start with a document type declaration: <!DOCTYPE html>.\nThe HTML document itself begins with <html> and ends with </html>.\nThe visible part of the HTML document is between <body> and </body>."
+                    },
+                    {
+                        "type": "snippet",
+                        "title":"Example",
+                        "value":"<!DOCTYPE html>\n<html>\n<body>\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n</body>\n</html>"
+                    },
+                    {
+                        "title":"The <!DOCTYPE> Declaration",
+                        "type": "text",
+                        "value": "The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.\nIt must only appear once, at the top of the page (before any HTML tags).\nThe <!DOCTYPE> declaration is not case sensitive.\nThe <!DOCTYPE> declaration for HTML5 is:"
+                    },
+                    {
+                        "type": "snippet",
+                        "title": "HTML5 Doctype",
+                        "value": "<!DOCTYPE html>"
+                    }
+                ]
+            },
+            {
+                "page": 2,
+                "title": "Headings",
+                "content": [
+                    {
+                        "type": "text",
+                        "title": "HTML Headings",
+                        "value": "HTML headings are defined with the <h1> to <h6> tags.\n<h1> defines the most important heading. <h6> defines the least important heading: "
+                    },
+                    {
+                        "type": "snippet",
+                        "title": "Heading Example",
+                        "value": "<h1>This is a heading</h1>\n<h2>This is a heading</h2>\n<h3>This is a heading</h3>\n<h4>This is a heading</h4>\n<h5>This is a heading</h5>\n<h6>This is a heading</h6>"
+                    }               
+                ]
+                },
+                {
+                "page": 3,
+                "title": "Paragraphs",
+                "content": [
+                    {
+                        "type": "text",
+                        "title": "HTML Paragraphs",
+                        "value": "HTML paragraphs are defined with the <p> tag.\nA paragraph always starts on a new line, and browsers automatically add space before and after any <p> element."
+                    },
+                    {
+                        "type": "snippet",
+                        "title": "Paragraph Example",
+                        "value": "<p>This is a paragraph.</p>\n<p>This is another paragraph.</p>"
+                    }
+                ]
+                },
+                {
+                "page": 4,
+                "title": "Links?",
+                "content": [
+                    {
+                        "type": "text",
+                        "title": "HTML Links",
+                        "value": "HTML links are defined with the <a> tag.\nThe link's destination is specified in the href attribute:"
+                    },
+                    {
+                        "type": "snippet",
+                        "title": "Link Example",
+                        "value": "<a href=\"https://www.example.com\">This is a link</a>"
+                    }
+                ]
+                },
+                {
+                "page": 5,
+                "title": "Images",
+                "content": [
+                    {
+                        "type": "text",
+                        "title": "HTML Images",
+                        "value": "HTML images are defined with the <img> tag.\nThe source file, an alternate text, and dimensions can be specified:"
+                    },
+                    {
+                        "type": "snippet",
+                        "title": "Image Example",
+                        "value": "<img src=\"img.jpg\" alt=\"My Image\" width=\"300\" height=\"200\">"
+                    }
+                ]
+                }
+            ]
+        },
+        {
+        "id":3,
+        "title": "HTML Styles",
+        "unlocked": true,
+        "content": [
+            {
+                "page": 1,
+                "title": "HTML Basic Examples",
+                "content": [
+                    {
+                    "type": "text",
+                    "value": "The HTML style attribute is used to add styles to an element, such as color, font, size, and more.\nYou can use the style attribute to apply CSS styles directly to HTML elements.\n\nFor example, to change the color of a heading, you can use:"
+                    },
+                    {
+                        "type": "text",
+                        "title": "The HTML Style Attribute",
+                        "value": "Setting the style of an HTML element, can be done with the style attribute.\nThe HTML style attribute has the following syntax:"
+                    },
+                    {
+                        "type": "snippet",
+                        "title":"Example",
+                        "value":"<tagname style=\"property:value;\">"
+                    }
+                ]
+            },
+            {
+                "page": 2,
+                "title": "HTML Styles",
+                "content": [
+                    {
+                        "title":"Background Color",
+                        "type": "text",
+                        "value": "The CSS background-color property defines the background color for an HTML element."
+                    },
+                    {
+                        "type": "snippet",
+                        "title": "HTML5 Doctype",
+                        "value": "<body style=\"background-color:blue;\">\n<h1>This is a heading</h1>\n<p>This is a paragraph.</p>\n</body>"
+                    },
+                    {
+                        "title":"Text Color",
+                        "type": "text",
+                        "value": "The CSS color property defines the text color for an HTML element."
+                    },
+                    {
+                        "type": "snippet",
+                        "title": "Text Color Example",
+                        "value": "<h1 style=\"color:blue;\">This is a heading</h1>\n<p style=\"color:red;\">This is a paragraph.</p>"
+                    },
+                    {
+                        "type": "text",
+                        "title": "Fonts",
+                        "value": "The CSS font-family property defines the font to be used for an HTML element:"
+                    },
+                    {
+                        "type": "snippet",
+                        "title": "Example",
+                        "value": "<h1 style=\"font-family:verdana;\">This is a heading</h1>\n<p style=\"font-family:courier;\">This is a paragraph.</p>"
+                    },      
+                    {
+                        "type": "text",
+                        "title": "Font Size",
+                        "value": "The CSS font-size property defines the size of the font for an HTML element:"
+                    },
+                    {
+                        "type": "snippet",
+                        "title": "Font Size Example",
+                        "value": "<h1 style=\"font-size:30px;\">This is a heading</h1>\n<p style=\"font-size:20px;\">This is a paragraph.</p>"
+                    },       
+                    {
+                        "type": "text",
+                        "title": "Text Alignment",
+                        "value": "The CSS text-align property defines the horizontal alignment of text in an HTML element:"
+                    },
+                    {
+                        "type": "snippet",
+                        "title": "Text Alignment Example",
+                        "value": "<h1 style=\"text-align:center;\">This is a heading</h1>\n<p style=\"text-align:right;\">This is a paragraph.</p>"
+                    }
+                ]
+                }
+            ]
         }
-    },
-    {
-    "id": 11,
-    "title": "htmlTables",
-    "displayTitle": "HTML Tables",
-    "content": "Tables are used to display data in rows and columns. In HTML, tables are created using the <table> tag. Inside a table, <tr> defines a row, <th> defines a header cell, and <td> defines a normal data cell.\n\nTables help organize content like schedules, prices, or lists in a structured way.",
-    "example": {
-        "title": "tableExample",
-        "displayTitle": "Table Example",
-        "code": "<table>\n  <tr>\n    <th>Name</th>\n    <th>Age</th>\n  </tr>\n  <tr>\n    <td>Ali</td>\n    <td>20</td>\n  </tr>\n  <tr>\n    <td>Sofia</td>\n    <td>22</td>\n  </tr>\n</table>",
-        "explanation": "The <table> tag wraps the whole table. Each <tr> is a row. Inside rows, <th> is used for headings and <td> for normal data."
+    ]
     }
-    },
-    {
-    "id": 12,
-    "title": "htmlDiv",
-    "displayTitle": "HTML <div> Tag",
-    "content": "The <div> tag is a block-level container used to group HTML elements together. It helps organize your page and apply styles or layouts more easily. Think of <div> as a box that holds other elements.\n\nIt doesn’t change how the content looks by itself, but it's very useful when designing and styling web pages.",
-    "example": {
-        "title": "divExample",
-        "displayTitle": "Div Example",
-        "code": "<div>\n  <h2>Welcome</h2>\n  <p>This is a simple webpage section inside a div.</p>\n</div>",
-        "explanation": "This example wraps a heading and a paragraph inside a <div>. You can later add styles to the <div> to control its look."
-    }
-    },
-    {
-    "id": 13,
-    "title": "htmlForms",
-    "displayTitle": "HTML Forms and Input",
-    "content": "HTML forms let users enter data, like names, emails, or passwords. Forms are used when you want to collect information from users and send it to a server.\n\nThe <form> tag wraps the form elements. Inside a form, you use different <input> types like text, email, password, and more.",
-    "example": {
-        "title": "formExample",
-        "displayTitle": "Form Example",
-        "code": "<form>\n  <label for=\"name\">Name:</label>\n  <input type=\"text\" id=\"name\" name=\"name\">\n\n  <label for=\"email\">Email:</label>\n  <input type=\"email\" id=\"email\" name=\"email\">\n\n  <input type=\"submit\" value=\"Submit\">\n</form>",
-        "explanation": "This form has two input fields: one for name and one for email. The <input type=\"submit\"> adds a button to send the form."
-    }
-    },
-    {
-    "id": 14,
-    "title": "htmlCss",
-    "displayTitle": "HTML and CSS",
-    "content": "HTML is used to build the structure of a webpage, like headings, text, and images. CSS (Cascading Style Sheets) is used to style the page — change colors, fonts, sizes, and layout.\n\nYou can write CSS inside the HTML file using a <style> tag, or link a separate CSS file using <link>.",
-    "example": {
-        "title": "cssExample",
-        "displayTitle": "HTML with CSS Example",
-        "code": "<!DOCTYPE html>\n<html>\n<head>\n  <style>\n    body {\n      background-color: lightblue;\n    }\n    h1 {\n      color: darkblue;\n      text-align: center;\n    }\n  </style>\n</head>\n<body>\n  <h1>Hello CSS</h1>\n  <p>This page has a light blue background and styled text.</p>\n</body>\n</html>",
-        "explanation": "The <style> tag adds CSS directly in the HTML. It changes the background color and makes the heading dark blue and centered."
-    }
-    },
-    {
-    "id": 15,
-    "title": "addingStylesheets",
-    "displayTitle": "Adding Stylesheets",
-    "content": "A stylesheet is a file that contains CSS code. You can link a CSS file to your HTML to keep things organized. This is called an external stylesheet.\n\nUsing stylesheets makes it easy to style many pages with the same look.",
-    "example": {
-        "title": "linkStylesheetExample",
-        "displayTitle": "Linking a CSS File",
-        "code": "<!DOCTYPE html>\n<html>\n<head>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n  <h1>This is styled using CSS</h1>\n</body>\n</html>",
-        "explanation": "The <link> tag in the <head> connects an external file called styles.css. That file contains the CSS rules to style the HTML."
-    }
-    },
-    {
-    "id": 16,
-    "title": "practiceProject",
-    "displayTitle": "Practice Project",
-    "content": "Let’s build a simple personal webpage using everything you've learned so far. This will include headings, paragraphs, images, links, tables, and a contact form.",
-    "steps": [
-        {
-        "stepTitle": "1. Basic Structure",
-        "stepDescription": "Start with the <!DOCTYPE html>, <html>, <head>, and <body> tags."
-        },
-        {
-        "stepTitle": "2. Add Your Name and Introduction",
-        "stepDescription": "Use <h1> for your name and <p> for a short description about yourself."
-        },
-        {
-        "stepTitle": "3. Add an Image",
-        "stepDescription": "Use the <img> tag to add a profile picture or favorite image."
-        },
-        {
-        "stepTitle": "4. Create a Table of Hobbies",
-        "stepDescription": "Make a simple table with columns like Hobby and Description."
-        },
-        {
-        "stepTitle": "5. Add a Link",
-        "stepDescription": "Link to your favorite website or social media using the <a> tag."
-        },
-        {
-        "stepTitle": "6. Add a Contact Form",
-        "stepDescription": "Use <form>, <input>, and <textarea> to let people contact you."
-        },
-        {
-        "stepTitle": "7. Style Your Page",
-        "stepDescription": "Link an external CSS file and add some basic styles like font and background color."
-        }
-    ],
-    "example": {
-        "title": "projectExample",
-        "displayTitle": "Sample Code Snippet",
-        "code": "<!DOCTYPE html>\n<html>\n<head>\n  <title>My Webpage</title>\n  <link rel=\"stylesheet\" href=\"style.css\">\n</head>\n<body>\n  <h1>Jane Doe</h1>\n  <p>Hello! I'm learning HTML.</p>\n  <img src=\"profile.jpg\" alt=\"My Profile Picture\">\n  <table>\n    <tr><th>Hobby</th><th>Description</th></tr>\n    <tr><td>Reading</td><td>I love reading novels.</td></tr>\n  </table>\n  <a href=\"https://example.com\">Visit my blog</a>\n  <form>\n    <input type=\"text\" placeholder=\"Your name\">\n    <textarea placeholder=\"Your message\"></textarea>\n    <button type=\"submit\">Send</button>\n  </form>\n</body>\n</html>",
-        "explanation": "This example shows how to bring together what you’ve learned into a real webpage."
-    }
-    },{
-    "id": 17,
-    "title": "bestPractices",
-    "displayTitle": "Best Practices",
-    "content": "Following best practices helps you write clean, readable, and accessible HTML code. Here are some tips to keep in mind as you continue learning and building websites.",
-    "steps": [
-        {
-        "stepTitle": "1. Always Use Doctype",
-        "stepDescription": "Start your HTML documents with <!DOCTYPE html> to ensure consistent rendering across browsers."
-        },
-        {
-        "stepTitle": "2. Keep Code Indented and Organized",
-        "stepDescription": "Use proper indentation (2 or 4 spaces) to keep your code readable."
-        },
-        {
-        "stepTitle": "3. Use Semantic Tags",
-        "stepDescription": "Use tags like <header>, <nav>, <main>, <section>, and <footer> to describe the structure of your page."
-        },
-        {
-        "stepTitle": "4. Add Alt Text to Images",
-        "stepDescription": "Always add the 'alt' attribute to images for accessibility and better SEO."
-        },
-        {
-        "stepTitle": "5. Use External CSS",
-        "stepDescription": "Keep your styles in separate CSS files to maintain clean HTML files."
-        },
-        {
-        "stepTitle": "6. Avoid Inline Styles",
-        "stepDescription": "Don’t write CSS in your HTML tags (e.g., style=\"color:red\"). Use classes instead."
-        },
-        {
-        "stepTitle": "7. Use Meaningful Class and ID Names",
-        "stepDescription": "Name your classes and IDs clearly, like 'main-content' or 'nav-bar', not 'box1'."
-        },
-        {
-        "stepTitle": "8. Validate Your Code",
-        "stepDescription": "Use tools like the W3C HTML Validator to catch errors and improve code quality."
-        },
-        {
-        "stepTitle": "9. Test on Different Browsers",
-        "stepDescription": "Always preview your pages in multiple browsers to make sure they look and work correctly everywhere."
-        },
-        {
-        "stepTitle": "10. Keep Learning and Practicing",
-        "stepDescription": "HTML evolves, so always stay updated and try new things as you improve."
-        }
-    ],
-    "example": {
-        "title": "semanticExample",
-        "displayTitle": "Semantic HTML Example",
-        "code": "<header>\n  <h1>My Portfolio</h1>\n</header>\n<main>\n  <section>\n    <h2>About Me</h2>\n    <p>I am a web developer learning HTML.</p>\n  </section>\n</main>\n<footer>\n  <p>&copy; 2025 My Name</p>\n</footer>",
-        "explanation": "This example uses semantic tags to make the page structure clear and accessible."
-    }
-    }   
-]
