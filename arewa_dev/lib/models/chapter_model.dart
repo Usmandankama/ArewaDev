@@ -1,29 +1,71 @@
-import 'package:arewa_dev/models/example_model.dart';
 
 class ChapterModel {
   final int id;
-  final String? title;
-  final String? content;
-  final String? code;
-  final ExampleModel example;
-
+  final String title;
+  final bool unlocked;
+  final List<PageModel> content;
 
   ChapterModel({
     required this.id,
     required this.title,
+    required this.unlocked,
     required this.content,
-    required this.code,
-    required this.example,
-    // required this.displayTitle,
   });
 
   factory ChapterModel.fromJson(Map<String, dynamic> json) {
     return ChapterModel(
       id: json['id'],
       title: json['title'],
-      content: json['content'],
-      code: json['code'],
-      example: ExampleModel.fromJson(json['example']),
+      unlocked: json['unlocked'] ?? false,
+      content: (json['content'] as List)
+          .map((e) => PageModel.fromJson(e))
+          .toList(),
     );
   }
 }
+
+
+class PageModel {
+  final int page;
+  final String title;
+  final List<ContentBlock> content;
+
+  PageModel({
+    required this.page,
+    required this.title,
+    required this.content,
+  });
+
+  factory PageModel.fromJson(Map<String, dynamic> json) {
+    return PageModel(
+      page: json['page'],
+      title: json['title'],
+      content: (json['content'] as List)
+          .map((e) => ContentBlock.fromJson(e))
+          .toList(),
+    );
+  }
+}
+
+class ContentBlock {
+  final String type; // "text" or "snippet"
+  final String? title;
+  final String value;
+
+  ContentBlock({
+    required this.type,
+    this.title,
+    required this.value,
+  });
+
+  factory ContentBlock.fromJson(Map<String, dynamic> json) {
+    return ContentBlock(
+      type: json['type'],
+      title: json['title'],
+      value: json['value'],
+    );
+  }
+}
+
+
+
