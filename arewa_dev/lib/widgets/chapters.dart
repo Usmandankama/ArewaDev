@@ -14,7 +14,6 @@ class ChapterListPage extends StatefulWidget {
   State<ChapterListPage> createState() => _ChapterListPageState();
 }
 
-
 class _ChapterListPageState extends State<ChapterListPage> {
   late Future<List<ChapterModel>> _chaptersFuture;
   bool isHausa = true; // Toggle for Hausa language
@@ -29,11 +28,11 @@ class _ChapterListPageState extends State<ChapterListPage> {
     final String response = await rootBundle.loadString(
       isHausa
           ? 'assets/data/html_tutorial_ha.json'
-          :
-      'assets/data/html_tutorial_en.json',
+          : 'assets/data/html_tutorial_en.json',
     );
-    final List<dynamic> data = jsonDecode(response);
-    return data.map((json) => ChapterModel.fromJson(json)).toList();
+    final Map<String, dynamic> data = jsonDecode(response);
+    final List<dynamic> chaptersJson = data['chapters'];
+    return chaptersJson.map((json) => ChapterModel.fromJson(json)).toList();
   }
 
   @override
@@ -41,35 +40,43 @@ class _ChapterListPageState extends State<ChapterListPage> {
     return Scaffold(
       backgroundColor: AppColors.backgroundColor,
       appBar: AppBar(
+        foregroundColor: AppColors.textPrimary,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
               'Chapters',
               style: GoogleFonts.montserrat(
-                color: AppColors.textPrimary,
                 fontSize: 20.sp,
+                fontWeight: FontWeight.bold,
               ),
             ),
-            TextButton(
-              onPressed: () {
+            GestureDetector(
+              onTap: () {
                 setState(() {
                   isHausa = !isHausa; // Toggle language
                   _chaptersFuture = _loadChapters(); // Reload chapters
                 });
               },
-              child: Text(
-                isHausa?"HA": 'EN',
-                style: GoogleFonts.montserrat(
-                  color: AppColors.textPrimary,
-                  fontSize: 20.sp,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                decoration: BoxDecoration(
+                  color: Colors.grey[850],
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Text(
+                  isHausa ? "HA" : "EN",
+                  style: GoogleFonts.montserrat(
+                    fontSize: 16.sp,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ),
           ],
         ),
         backgroundColor: AppColors.backgroundColor,
-        foregroundColor: AppColors.textPrimary,
+        elevation: 0,
       ),
       body: FutureBuilder<List<ChapterModel>>(
         future: _chaptersFuture,
@@ -84,38 +91,84 @@ class _ChapterListPageState extends State<ChapterListPage> {
 
           final chapters = snapshot.data!;
           return ListView.builder(
+            padding: EdgeInsets.all(16.w),
             itemCount: chapters.length,
             itemBuilder: (context, index) {
               final chapter = chapters[index];
-              return Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 15.0),
-                child: Card(
-                  color: AppColors.secondaryColor,
-                  child: ListTile(
-                    leading: Text(
-                      '${chapter.id}',
-                      style: GoogleFonts.montserrat(
-                        color: AppColors.textPrimary,
-                        fontSize: 18.sp,
+
+              return GestureDetector(
+                onTap: () {
+                  if (chapter.unlocked) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder:
+                            (context) =>
+                                LearningScreen(chapter: chapters[index]),
                       ),
-                    ),
-                    title: Text(
-                      chapter.title!,
-                      style: GoogleFonts.montserrat(
-                        color: AppColors.textPrimary,
-                        fontSize: 18.sp,
+                    );
+                  } else {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text("This chapter is locked")),
+                    );
+                  }
+                },
+                child: Container(
+                  margin: EdgeInsets.only(bottom: 14.h),
+                  padding: EdgeInsets.all(16.w),
+                  decoration: BoxDecoration(
+                    color:
+                        chapter.unlocked
+                            ? AppColors.secondaryColor
+                            : Colors.grey[400],
+                    borderRadius: BorderRadius.circular(16.r),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.2),
+                        blurRadius: 6,
+                        offset: const Offset(0, 4),
                       ),
-                    ),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder:
-                              (context) =>
-                                  LearningScreen(data: chapters[index]),
+                    ],
+                  ),
+                  child: Row(
+                    children: [
+                      // Circle with Chapter Number
+                      CircleAvatar(
+                        backgroundColor:
+                            chapter.unlocked
+                                ? AppColors.primaryColor
+                                : Colors.grey,
+                        radius: 22.r,
+                        child: Text(
+                          '${chapter.id}',
+                          style: GoogleFonts.montserrat(
+                            color: Colors.white,
+                            fontSize: 16.sp,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      );
-                    },
+                      ),
+                      SizedBox(width: 16.w),
+
+                      // Title
+                      Expanded(
+                        child: Text(
+                          chapter.title,
+                          style: GoogleFonts.montserrat(
+                            color: AppColors.textPrimary,
+                            fontSize: 16.sp,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+
+                      // Lock or Arrow
+                      Icon(
+                        chapter.unlocked ? Icons.arrow_forward_ios : Icons.lock,
+                        color: AppColors.textPrimary,
+                        size: 20.sp,
+                      ),
+                    ],
                   ),
                 ),
               );
