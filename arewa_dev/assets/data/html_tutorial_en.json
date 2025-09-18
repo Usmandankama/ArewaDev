@@ -1,160 +1,160 @@
-    {
+{
     "chapters": [
         {
-        "id": 1,
-        "title": "Introduction to HTML",
-        "unlocked": true,
-        "content": [
-            {
-            "page": 1,
-            "title": "What is HTML?",
+            "id": 1,
+            "title": "Introduction to HTML",
+            "unlocked": true,
             "content": [
                 {
-                "type": "text",
-                "title": "HTML Introduction",
-                "value": "HTML stands for HyperText Markup Language. It is the standard language for creating web pages. \n HTML describes the structure of a webpage using markup. \n It consists of a series of elements that tell the browser how to display content."
-                }
-            ]
-            },
-            {
-            "page": 2,
-            "title": "Why Use HTML?",
-            "content": [
-                {
-                    "type": "text",
-                    "title": "HTML Documents",
-                    "value": "HTML is essential for web development. It allows you to create structured documents that can be displayed in web browsers. \n\nWith HTML, you can:\n- Create headings, paragraphs, links, images, and other content\n- Structure your content with lists and tables\n- Embed multimedia elements like videos and audio\n- Create forms for user input"
-                }
-            ]
-            },
-            {
-            "page": 3,
-            "title": "A Simple HTML Document",
-            "content": [
-                {
-                "type": "snippet",
-                "title": "HTML Example",
-                "value": "<!DOCTYPE html>\n<html>\n<head>\n<title>Page Title</title>\n</head>\n<body>\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n</body>\n</html>"
-                },
-
-                {
-                "type": "text",
-                "title": "Example Explanation",
-                "value": "The <!DOCTYPE html> declaration defines that this document is an HTML5 document\nThe <html> element is the root element of an HTML page\nThe <head> element contains meta information about the HTML page\nThe <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)\nThe <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.\nThe <h1> element defines a large heading\nThe <p> element defines a paragraph"
-                }
-            ]
-            },
-            {
-            "page": 4,
-            "title": "What is an HTML Element?",
-            "content": [
-                {
-                "type": "text",
-                "title": "HTML Elements",
-                "value": "An HTML element is defined by a start tag, some content, and an end tag:\n\nFor example, <p>This is a paragraph.</p> is a paragraph element. \nThe <p> is the start tag, and </p> is the end tag. The content is 'This is a paragraph.'\n\nSome elements can be self-closing, like <img /> or <br />."
-                }
-            ]
-            }
-        ]
-        },
-        {
-        "id":2,
-        "title": "Basic HTML",
-        "unlocked": true,
-        "content": [
-            {
                 "page": 1,
-                "title": "HTML Basic Examples",
+                "title": "What is HTML?",
                 "content": [
                     {
                     "type": "text",
-                    "value": "In this chapter we will show some basic HTML examples.\nDon't worry if we use tags you have not learned about yet. They will be explained in later chapters.\n\nYou can try these examples in your own HTML files or in an online HTML editor."
-                    },
+                    "title": "HTML Introduction",
+                    "value": "HTML stands for HyperText Markup Language. It is the standard language for creating web pages. \n HTML describes the structure of a webpage using markup. \n It consists of a series of elements that tell the browser how to display content."
+                    }
+                ]
+                },
+                {
+                "page": 2,
+                "title": "Why Use HTML?",
+                "content": [
                     {
                         "type": "text",
                         "title": "HTML Documents",
-                        "value": "All HTML documents must start with a document type declaration: <!DOCTYPE html>.\nThe HTML document itself begins with <html> and ends with </html>.\nThe visible part of the HTML document is between <body> and </body>."
-                    },
-                    {
-                        "type": "snippet",
-                        "title":"Example",
-                        "value":"<!DOCTYPE html>\n<html>\n<body>\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n</body>\n</html>"
-                    },
-                    {
-                        "title":"The <!DOCTYPE> Declaration",
-                        "type": "text",
-                        "value": "The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.\nIt must only appear once, at the top of the page (before any HTML tags).\nThe <!DOCTYPE> declaration is not case sensitive.\nThe <!DOCTYPE> declaration for HTML5 is:"
-                    },
-                    {
-                        "type": "snippet",
-                        "title": "HTML5 Doctype",
-                        "value": "<!DOCTYPE html>"
+                        "value": "HTML is essential for web development. It allows you to create structured documents that can be displayed in web browsers. \n\nWith HTML, you can:\n- Create headings, paragraphs, links, images, and other content\n- Structure your content with lists and tables\n- Embed multimedia elements like videos and audio\n- Create forms for user input"
                     }
-                ]
-            },
-            {
-                "page": 2,
-                "title": "Headings",
-                "content": [
-                    {
-                        "type": "text",
-                        "title": "HTML Headings",
-                        "value": "HTML headings are defined with the <h1> to <h6> tags.\n<h1> defines the most important heading. <h6> defines the least important heading: "
-                    },
-                    {
-                        "type": "snippet",
-                        "title": "Heading Example",
-                        "value": "<h1>This is a heading</h1>\n<h2>This is a heading</h2>\n<h3>This is a heading</h3>\n<h4>This is a heading</h4>\n<h5>This is a heading</h5>\n<h6>This is a heading</h6>"
-                    }               
                 ]
                 },
                 {
                 "page": 3,
-                "title": "Paragraphs",
+                "title": "A Simple HTML Document",
                 "content": [
                     {
-                        "type": "text",
-                        "title": "HTML Paragraphs",
-                        "value": "HTML paragraphs are defined with the <p> tag.\nA paragraph always starts on a new line, and browsers automatically add space before and after any <p> element."
+                    "type": "snippet",
+                    "title": "HTML Example",
+                    "value": "<!DOCTYPE html>\n<html>\n<head>\n<title>Page Title</title>\n</head>\n<body>\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n</body>\n</html>"
                     },
+
                     {
-                        "type": "snippet",
-                        "title": "Paragraph Example",
-                        "value": "<p>This is a paragraph.</p>\n<p>This is another paragraph.</p>"
+                    "type": "text",
+                    "title": "Example Explanation",
+                    "value": "The <!DOCTYPE html> declaration defines that this document is an HTML5 document\nThe <html> element is the root element of an HTML page\nThe <head> element contains meta information about the HTML page\nThe <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)\nThe <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.\nThe <h1> element defines a large heading\nThe <p> element defines a paragraph"
                     }
                 ]
                 },
                 {
                 "page": 4,
-                "title": "Links?",
+                "title": "What is an HTML Element?",
                 "content": [
                     {
-                        "type": "text",
-                        "title": "HTML Links",
-                        "value": "HTML links are defined with the <a> tag.\nThe link's destination is specified in the href attribute:"
-                    },
-                    {
-                        "type": "snippet",
-                        "title": "Link Example",
-                        "value": "<a href=\"https://www.example.com\">This is a link</a>"
+                    "type": "text",
+                    "title": "HTML Elements",
+                    "value": "An HTML element is defined by a start tag, some content, and an end tag:\n\nFor example, <p>This is a paragraph.</p> is a paragraph element. \nThe <p> is the start tag, and </p> is the end tag. The content is 'This is a paragraph.'\n\nSome elements can be self-closing, like <img /> or <br />."
                     }
                 ]
+                }
+            ]
+        },
+        {
+            "id":2,
+            "title": "Basic HTML",
+            "unlocked": true,
+            "content": [
+                {
+                    "page": 1,
+                    "title": "HTML Basic Examples",
+                    "content": [
+                        {
+                        "type": "text",
+                        "value": "In this chapter we will show some basic HTML examples.\nDon't worry if we use tags you have not learned about yet. They will be explained in later chapters.\n\nYou can try these examples in your own HTML files or in an online HTML editor."
+                        },
+                        {
+                            "type": "text",
+                            "title": "HTML Documents",
+                            "value": "All HTML documents must start with a document type declaration: <!DOCTYPE html>.\nThe HTML document itself begins with <html> and ends with </html>.\nThe visible part of the HTML document is between <body> and </body>."
+                        },
+                        {
+                            "type": "snippet",
+                            "title":"Example",
+                            "value":"<!DOCTYPE html>\n<html>\n<body>\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n</body>\n</html>"
+                        },
+                        {
+                            "title":"The <!DOCTYPE> Declaration",
+                            "type": "text",
+                            "value": "The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.\nIt must only appear once, at the top of the page (before any HTML tags).\nThe <!DOCTYPE> declaration is not case sensitive.\nThe <!DOCTYPE> declaration for HTML5 is:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "HTML5 Doctype",
+                            "value": "<!DOCTYPE html>"
+                        }
+                    ]
                 },
                 {
-                "page": 5,
-                "title": "Images",
-                "content": [
+                    "page": 2,
+                    "title": "Headings",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title": "HTML Headings",
+                            "value": "HTML headings are defined with the <h1> to <h6> tags.\n<h1> defines the most important heading. <h6> defines the least important heading: "
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Heading Example",
+                            "value": "<h1>This is a heading</h1>\n<h2>This is a heading</h2>\n<h3>This is a heading</h3>\n<h4>This is a heading</h4>\n<h5>This is a heading</h5>\n<h6>This is a heading</h6>"
+                        }               
+                    ]
+                },
                     {
-                        "type": "text",
-                        "title": "HTML Images",
-                        "value": "HTML images are defined with the <img> tag.\nThe source file, an alternate text, and dimensions can be specified:"
+                        "page": 3,
+                        "title": "Paragraphs",
+                        "content": [
+                            {
+                                "type": "text",
+                                "title": "HTML Paragraphs",
+                                "value": "HTML paragraphs are defined with the <p> tag.\nA paragraph always starts on a new line, and browsers automatically add space before and after any <p> element."
+                            },
+                            {
+                                "type": "snippet",
+                                "title": "Paragraph Example",
+                                "value": "<p>This is a paragraph.</p>\n<p>This is another paragraph.</p>"
+                            }
+                        ]
                     },
                     {
-                        "type": "snippet",
-                        "title": "Image Example",
-                        "value": "<img src=\"img.jpg\" alt=\"My Image\" width=\"300\" height=\"200\">"
-                    }
-                ]
+                        "page": 4,
+                        "title": "Links?",
+                        "content": [
+                            {
+                                "type": "text",
+                                "title": "HTML Links",
+                                "value": "HTML links are defined with the <a> tag.\nThe link's destination is specified in the href attribute:"
+                            },
+                            {
+                                "type": "snippet",
+                                "title": "Link Example",
+                                "value": "<a href=\"https://www.example.com\">This is a link</a>"
+                            }
+                        ]
+                    },
+                    {
+                    "page": 5,
+                    "title": "Images",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title": "HTML Images",
+                            "value": "HTML images are defined with the <img> tag.\nThe source file, an alternate text, and dimensions can be specified:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Image Example",
+                            "value": "<img src=\"img.jpg\" alt=\"My Image\" width=\"300\" height=\"200\">"
+                        }
+                    ]
                 }
             ]
         },
@@ -240,6 +240,252 @@
                 ]
                 }
             ]
+        },
+        {
+            "id":4,
+            "title": "HTML Colors",
+            "unlocked": true,
+            "content": [
+                {
+                    "page": 1,
+                    "title": "HTML Colors",
+                    "content": [
+                        {
+                        "type": "text",
+                        "value": "In this chapter we will show how to use colors in HTML.\nDon't worry if we use tags you have not learned about yet. They will be explained in later chapters.\n\nYou can try these examples in your own HTML files or in an online HTML editor."
+                        },
+                        {
+                            "type": "text",
+                            "title": "HTML Colors",
+                            "value": "Colors in HTML can be specified by:\n- A color name - like \"red\"\n- A HEX value - like \"#ff0000\"\n- An RGB value - like \"rgb(255,0,0)\"\n- An HSL value - like \"hsl(0, 100%, 50%)\""
+                        },
+                        {
+                            "type": "snippet",
+                            "title":"Example",
+                            "value":"<h1 style=\"color:blue;\">This is a heading</h1>\n<p style=\"color:#ff0000;\">This is a paragraph.</p>\n<p style=\"color:rgb(0,255,0);\">This is another paragraph.</p>\n<p style=\"color:hsl(240,100%,50%);\">This is yet another paragraph.</p>"
+                        }
+                    ]
+                },
+                {
+                    "page": 2,
+                    "title": "Background, Text and Bordercolors",
+                    "content": [
+                        {
+                            "title":"Background Color",
+                            "type": "text",
+                            "value": "The CSS background-color property defines the background color for an HTML element."
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Example",
+                            "value": "<h1 style=\"background-color:DodgerBlue;>Hello World</h1>\n<p style=\"background-color:Tomato;\">Lorem ipsum...</p>"
+                        },
+                        {
+                            "type": "text",
+                            "title": "Text Color",
+                            "value": "You can set the color of text:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Text Color Example",
+                            "value": "<h1 style=\"color:Tomato;\">Hello World</h1>\n<p style=\"color:DodgerBlue;\">Lorem ipsum...</p>\n<p style=\"color:MediumSeaGreen;\">Ut wisi enim...</p>"
+                        },
+                        {
+                            "type": "text",
+                            "title": "Border Color",
+                            "value": "You can set the color of borders:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Border Color Example",
+                            "value": "<h1 style=\"border:2px solid DodgerBlue;\">Hello World</h1>\n<p style=\"border:2px solid Tomato;\">Lorem ipsum...</p>\n<p style=\"border:2px solid MediumSeaGreen;\">Ut wisi enim...</p>"
+                        }
+                    ]
+                },
+                {
+                    "page": 3,
+                    "title": "Color Values",
+                    "content": [
+                        {
+                            "title":"Color Names",
+                            "type": "text",
+                            "value": "You can use color names in HTML:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Example",
+                            "value": "<h1 style=\"color:blue;\">This is a heading</h1>\n<p style=\"color:red;\">This is a paragraph.</p>\n<p style=\"color:green;\">This is another paragraph.</p>"
+                        },
+                        {
+                            "title":"HEX Values",
+                            "type": "text",
+                            "value": "You can use HEX values in HTML:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Example",
+                            "value": "<h1 style=\"color:#0000FF;\">This is a heading</h1>\n<p style=\"color:#FF0000;\">This is a paragraph.</p>\n<p style=\"color:#008000;\">This is another paragraph.</p>"
+                        },
+                        {
+                            "title":"RGB Values",
+                            "type": "text",
+                            "value": "You can use RGB values in HTML:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Example",
+                            "value": "<h1 style=\"color:rgb(0,0,255);\">This is a heading</h1>\n<p style=\"color:rgb(255,0,0);\">This is a paragraph.</p>\n<p style=\"color:rgb(0,128,0);\">This is another paragraph.</p>"
+                        },
+                        {
+                            "title":"HSL Values",
+                            "type": "text",
+                            "value": "You can use HSL values in HTML:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Example",
+                            "value": "<h1 style=\"color:hsl(240,100%,50%);\">This is a heading</h1>\n<p style=\"color:hsl(0,100%,50%);\">This is a paragraph.</p>\n<p style=\"color:hsl(120,100%,25%);\">This is another paragraph.</p>"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id":5,
+            "title": "HTML CSS",
+            "unlocked": true,
+            "content": [
+                {
+                    "page": 1,
+                    "title": "HTML Styles with CSS",
+                    "content": [
+                        {
+                        "type": "text",
+                        "value": "CSS stands for Cascading Style Sheets.\nCSS saves a lot of work. It can control the layout of multiple web pages all at once."
+                        },
+                        {
+                            "type": "text",
+                            "title": "What is CSS?",
+                            "value": "CSS stands for Cascading Style Sheets. With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!"
+                        },
+                        {
+                            "type": "text",
+                            "title": "Using Css",
+                            "value": "CSS can be added to HTML documents in 3 ways:\nInline - by using the style attribute inside HTML elements\nInternal - by using a <style> element in the <head> section\nExternal - by using a <link> element to link to an external CSS file\nThe most common way to add CSS, is to keep the styles in external CSS files. However, in this tutorial we will use inline and internal styles, because this is easier to demonstrate, and easier for you to try it yourself."
+                        }
+                    ]
+                },
+                {
+                    "page": 2,
+                    "title": "Inline CSS",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title":"Inline CSS",
+                            "value":"An inline CSS is used to apply a unique style to a single HTML element.\nAn inline CSS uses the style attribute of an HTML element.\nThe following example sets the text color of the <h1> element to blue, and the text color of the <p> element to red:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Example",
+                            "value": "<h1 style=\"color:blue;\">A Blue Heading</h1>\n<p style=\"color:red;\">A red paragraph.</p>"
+                        }
+                    ]
+                },
+                {
+                    "page": 3,
+                    "title": "Internal CSS",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title":"Internal CSS",
+                            "value":"An internal CSS is used to define a style for a single HTML page.\nAn internal CSS is defined in the <head> section of an HTML page, within a <style> element.\nnThe following example sets the text color of ALL the <h1> elements (on that page) to blue, and the text color of ALL the <p> elements to red. In addition, the page will be displayed with a powderblue\" background color: "
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Example",
+                            "value": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nh1 {color: blue;}\np {color: red;}\n</style>\n</head>\n<body>\n<h1>A Blue Heading</h1>\n<p>A red paragraph.</p>\n</body>\n</html>"
+                        }
+                    ]
+                },
+                {
+                    "page": 4,
+                    "title": "External CSS",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title":" External Syntax",
+                            "value":"An external style sheet is used to define the style for many HTML pages.\nTo use an external style sheet, add a link to it in the <head> section of each HTML page:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Example",
+                            "value":" <!DOCTYPE html>\n<html>\n<head>\n <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n<h1>This is a heading</h1>\n<p>This is a paragraph.</p>\n</body>\n</html>"
+                        },
+                        {
+                            "type": "text",
+                            "title":"The styles.css File",
+                            "value":"The external style sheet can be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension.\nHere is what the \"styles.css\" file looks like:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "styles.css",
+                            "value":"body {\nbackground-color: powderblue;\n}\nh1 {\n color: blue;\n}\np {\n color: red;\n}"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id":6,
+            "title": "HTML Links",
+            "unlocked": true,
+            "content": [
+                {
+                    "page": 1,
+                    "title": "HTML Links",
+                    "content": [
+                        {
+                        "type": "text",
+                        "value":"Links are found in nearly all web pages. Links allow users to click their way from page to page."
+                        },
+                        {
+                            "type": "text",
+                            "title": "HTML Links - Hyperlinks",
+                            "value": "HTML links are hyperlinks.\nYou can click on a link and jump to another document.\nWhen you move the mouse over a link, the mouse arrow will turn into a little hand.\n\nNote: A link does not have to be text. A link can be an image or any other HTML element!"
+                        },
+                        {
+                            "type": "text",
+                            "title": "HTML Links - Syntax",
+                            "value": "The HTML <a> tag defines a hyperlink. It has the following syntax:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title":"Example",
+                            "value":"<a href=\"https://www.example.com\">This is a link</a>"
+                        },
+                        {
+                            "type": "text",
+                            "value": "The most important attribute of the <a> element is the href attribute, which indicates the link's destination.\nThe link text is the part that will be visible to the reader.\nClicking on the link text, will send the reader to the specified URL address."
+                        }
+                    ]
+                },
+                {
+                    "page": 2,
+                    "title": "HTML Links - Target Attribute",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title":"HTML Links - Target Attribute",
+                            "value":"By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.\nThe default value is _self, which means the linked document will open in the same window/tab as it was clicked.\n\nOther values for the target attribute are:\n- _blank: Opens the linked document in a new window or tab\n- _parent: Opens the linked document in the parent frame\n- _top: Opens the linked document in the full body of the window"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Example",
+                            "value":"<a href=\"https://www.google.com\" target=\"_blank\">This link opens in a new tab</a>"
+                        }
+                    ]
+                }
+            ]
         }
     ]
-    }
+}

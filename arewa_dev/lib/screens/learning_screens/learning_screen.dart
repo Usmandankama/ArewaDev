@@ -83,9 +83,12 @@ class _LearningScreenState extends State<LearningScreen> {
                       color: Colors.grey[850],
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: const Text(
-                      "HA",
-                      style: TextStyle(color: Colors.white),
+                    child: GestureDetector(
+                      onTap:(){},
+                      child: const Text(
+                        "HA",
+                        style: TextStyle(color: Colors.white),
+                      ),
                     ),
                   ),
                 ],
