@@ -16,7 +16,7 @@ class ChapterListPage extends StatefulWidget {
 
 class _ChapterListPageState extends State<ChapterListPage> {
   late Future<List<ChapterModel>> _chaptersFuture;
-  bool isHausa = true; // Toggle for Hausa language
+  bool isHausa = false; // Toggle for Hausa language
 
   @override
   void initState() {
@@ -65,7 +65,7 @@ class _ChapterListPageState extends State<ChapterListPage> {
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Text(
-                  isHausa ? "HA" : "EN",
+                  isHausa ? "EN" : "HA",
                   style: GoogleFonts.montserrat(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.bold,
@@ -84,7 +84,6 @@ class _ChapterListPageState extends State<ChapterListPage> {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Center(child: CircularProgressIndicator());
           }
-
           if (snapshot.hasError) {
             return Center(child: Text('Error: ${snapshot.error}'));
           }

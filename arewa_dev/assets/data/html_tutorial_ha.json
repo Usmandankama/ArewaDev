@@ -169,7 +169,7 @@
                 "content": [
                     {
                     "type": "text",
-                    "value": "The HTML style attribute is used to add styles to an element, such as color, font, size, and more.\nYou can use the style attribute to apply CSS styles directly to HTML elements.\n\nFor example, to change the color of a heading, you can use:"
+                    "value": "The HTML style attribute is used to add styles to an element, such as color, font, size, and more.\nYou can use the style attribute to apply CSS styles directly to HTML elements.\nFor example, to change the color of a heading, you can use:"
                     },
                     {
                         "type": "text",

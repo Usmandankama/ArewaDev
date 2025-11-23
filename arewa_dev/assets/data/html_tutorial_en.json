@@ -486,6 +486,75 @@
                     ]
                 }
             ]
+        },
+        {
+            "id":7,
+            "title": "HTML Images",
+            "unlocked": true,
+            "content": [
+                {
+                    "page": 1,
+                    "title": "HTML Images",
+                    "content": [
+                        {
+                        "type": "text",
+                        "value":"Images can enhance the look of a web page. They can also be used to illustrate points made in the text."
+                        },
+                        {
+                            "type": "text",
+                            "title": "HTML Images - The <img> Tag",
+                            "value": "In HTML, images are defined with the <img> tag.\nThe <img> tag is empty, it contains attributes only, and does not have a closing tag."
+                        },
+                        {
+                            "type":"text",
+                            "title":"HTML Images Syntax"
+                        },
+                        {
+                            "type": "text",
+                            "value":"The HTML <img> tag is used to embed an image in a web page.\n\nImages are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.\nThe <img> tag is empty, it contains attributes only, and does not have a closing tag.\nThe <img> tag has two required attributes:\nsrc - Specifies the path to the image\nalt - Specifies an alternate text for the image"
+                        },
+                        {
+                            "type": "text",
+                            "title": "HTML Images - The src Attribute",
+                            "value": "The src attribute specifies the path to the image to be displayed."
+                        },
+                        {
+                            "type": "snippet",
+                            "title":"Example",
+                            "value":"<img src=\"img.jpg\" alt=\"My Image\">"
+                        },
+                        {
+                            "type": "text",
+                            "value": "The alt attribute provides an alternative text for the image, if the image cannot be displayed."
+                        }
+                    ]
+                },
+                {
+                    "page": 2,
+                    "title": "HTML Images - Width and Height",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title":"HTML Images - Width and Height",
+                            "value":"You can use the width and height attributes to specify the size of an image."
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Example",
+                            "value":"<img src=\"img.jpg\" alt=\"My Image\" width=\"300\" height=\"200\">"
+                        },
+                        {
+                            "type": "text",
+                            "value":"Alternatively, you can use the style attribute to specify the width and height of an image."
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Example",
+                            "value":"<img src=\"img.jpg\" alt=\"My Image\" style=\"width:300px;height:200px;\">"
+                        }
+                    ]
+                }
+            ]   
         }
     ]
 }

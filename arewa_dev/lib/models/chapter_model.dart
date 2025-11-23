@@ -27,7 +27,7 @@ class ChapterModel {
 
 class PageModel {
   final int page;
-  final String title;
+  final dynamic title;
   final List<ContentBlock> content;
 
   PageModel({
@@ -48,9 +48,9 @@ class PageModel {
 }
 
 class ContentBlock {
-  final String type; // "text" or "snippet"
-  final String? title;
-  final String value;
+  final dynamic type; // "text" or "snippet"
+  final dynamic title;
+  final dynamic value;
 
   ContentBlock({
     required this.type,
