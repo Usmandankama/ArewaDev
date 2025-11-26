@@ -1,245 +1,788 @@
     {
     "chapters": [
         {
-        "id": 1,
-        "title": "Gabatar da HTML",
-        "unlocked": true,
-        "content": [
-            {
+            "id": 1,
+            "title": "Gabatarwa ga HTML",
+            "unlocked": true,
+            "content": [
+                {
+                    "page": 1,
+                    "title": "Menene HTML?",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title": "Gabatarwar HTML",
+                            "value": "HTML tana nufin HyperText Markup Language. Ita ce harshen da ake amfani da shi wajen ƙirƙirar shafukan yanar gizo. \n HTML tana bayyana tsarin shafi ta amfani da alamu. \n Tana da jerin abubuwa da ke nuna wa mai bincike yadda za a nuna abun ciki."
+                        }
+                    ]
+                },
+                {
+                    "page": 2,
+                    "title": "Me Yasa Ake Amfani da HTML?",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title": "Takardun HTML",
+                            "value": "HTML tana da muhimmanci wajen haɓaka yanar gizo. Tana ba ka damar ƙirƙirar takardu masu tsari waɗanda za a iya nuna su a cikin masu bincike. \n\nTare da HTML, za ka iya:\n- Ƙirƙirar kanun labarai, sakin layi, hanyoyin haɗi, hotuna, da sauran abubuwa\n- Tsara abun ciki ta amfani da jerin abubuwa da tebura\n- Hada abubuwan multimedia kamar bidiyo da sauti\n- Ƙirƙirar fom don shigarwar mai amfani"
+                        }
+                    ]
+                },
+                {
+                    "page": 3,
+                    "title": "Sauƙaƙan Takaddar HTML",
+                    "content": [
+                        {
+                            "type": "snippet",
+                            "title": "Misalin HTML",
+                            "value": "<!DOCTYPE html>\n<html>\n<head>\n<title>Page Title</title>\n</head>\n<body>\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n</body>\n</html>"
+                        },
+                        {
+                            "type": "text",
+                            "title": "Bayani Kan Misalin",
+                            "value": "Sanarwar <!DOCTYPE html> tana nuna cewa wannan takaddar HTML5 ce.\nAbun <html> shine tushen shafi na HTML.\nAbun <head> yana ɗauke da bayanai na meta game da shafin HTML.\nAbun <title> yana nuna taken shafin HTML (ana nuna shi a sandar taken mai bincike ko a tab na shafi).\nAbun <body> yana bayyana jikin takaddar, kuma shi ne akwati ga duk abubuwan da ake gani, kamar kanun labarai, sakin layi, hotuna, hanyoyin haɗi, tebura, jerin abubuwa, da sauransu.\nAbun <h1> yana nuna babban kanun labarai.\nAbun <p> yana nuna sakin layi."
+                        }
+                    ]
+                },
+                {
+                    "page": 4,
+                    "title": "Menene Abun HTML?",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title": "Abubuwan HTML",
+                            "value": "Abun HTML ana bayyana shi da alamar fara aiki, wani abu a ciki, da alamar rufe aiki:\n\nMisali, <p>Wannan sakin layi ne.</p> abun sakin layi ne. \n<p> shine alamar fara aiki, </p> shine alamar rufe aiki. Abun ciki shine 'Wannan sakin layi ne.'\n\nWasu abubuwa za su iya rufewa da kansu, kamar <img /> ko <br />."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Asalin HTML",
+            "unlocked": true,
+            "content": [
+                {
+                    "page": 1,
+                    "title": "Misalan Asalin HTML",
+                    "content": [
+                        {
+                            "type": "text",
+                            "value": "A wannan babi za mu nuna wasu misalan HTML na asali.\nKada ka damu idan muka yi amfani da alamun da ba ka koya ba tukuna. Za a bayyana su a cikin babi na gaba.\n\nZa ka iya gwada waɗannan misalan a cikin fayil ɗin HTML naka ko a cikin editan HTML na kan layi."
+                        },
+                        {
+                            "type": "text",
+                            "title": "Takardun HTML",
+                            "value": "Dukkan takardun HTML dole ne su fara da sanarwar nau'in takaddar: <!DOCTYPE html>.\nTakaddar HTML kanta tana farawa da <html> kuma tana ƙarewa da </html>.\nSashen da ake gani na takaddar HTML yana tsakanin <body> da </body>."
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misali",
+                            "value": "<!DOCTYPE html>\n<html>\n<body>\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n</body>\n</html>"
+                        },
+                        {
+                            "type": "text",
+                            "title": "Sanarwar <!DOCTYPE>",
+                            "value": "Sanarwar <!DOCTYPE> tana nuna nau'in takaddar, kuma tana taimaka wa masu bincike wajen nuna shafukan yanar gizo daidai.\nDole ne ta bayyana sau ɗaya kawai, a saman shafi (kafin kowace alamar HTML).\nSanarwar <!DOCTYPE> ba ta da bambanci tsakanin manya da ƙanana.\nSanarwar <!DOCTYPE> na HTML5 ita ce:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "HTML5 Doctype",
+                            "value": "<!DOCTYPE html>"
+                        }
+                    ]
+                },
+                {
+                    "page": 2,
+                    "title": "Kanun Labarai",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title": "Kanun Labarai na HTML",
+                            "value": "Kanun labarai na HTML ana bayyana su da alamun <h1> zuwa <h6>.\n<h1> yana nuna mafi muhimmancin kanun labarai. <h6> yana nuna ƙarancin muhimmanci."
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misalin Kanun Labarai",
+                            "value": "<h1>Wannan kanun labarai ne</h1>\n<h2>Wannan kanun labarai ne</h2>\n<h3>Wannan kanun labarai ne</h3>\n<h4>Wannan kanun labarai ne</h4>\n<h5>Wannan kanun labarai ne</h5>\n<h6>Wannan kanun labarai ne</h6>"
+                        }               
+                    ]
+                },
+                {
+                    "page": 3,
+                    "title": "Sakin Layi",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title": "Sakin Layin HTML",
+                            "value": "Sakin layin HTML ana bayyana shi da alamar <p>.\nSakin layi koyaushe yana farawa a sabon layi, kuma masu bincike suna ƙara sarari kafin da bayan kowace alamar <p> ta atomatik."
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misalin Sakin Layi",
+                            "value": "<p>Wannan sakin layi ne.</p>\n<p>Wannan wani sakin layi ne.</p>"
+                        }
+                    ]
+                },
+                {
+                    "page": 4,
+                    "title": "Hanyoyi?",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title": "Hanyoyin HTML",
+                            "value": "Hanyoyin HTML ana bayyana su da alamar <a>.\nManufa ko wurin da hanyar za ta kai an bayyana shi a cikin siffar href:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misalin Hanya",
+                            "value": "<a href=\"https://www.example.com\">Wannan hanya ce</a>"
+                        }
+                    ]
+                },
+                {
+                    "page": 5,
+                    "title": "Hotuna",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title": "Hotunan HTML",
+                            "value": "Hotunan HTML ana bayyana su da alamar <img>.\nAna iya bayyana fayil ɗin tushe, rubutun madadin, da girman hoto:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misalin Hoto",
+                            "value": "<img src=\"img.jpg\" alt=\"Hotona\" width=\"300\" height=\"200\">"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Salon HTML",
+            "unlocked": true,
+            "content": [
+                {
+                    "page": 1,
+                    "title": "Misalan Asalin HTML",
+                    "content": [
+                        {
+                            "type": "text",
+                            "value": "Siffofin style na HTML ana amfani da su don ƙara salo ga wani abu, kamar launi, font, girma, da sauran su.\nZa ka iya amfani da siffofin style don amfani da salo na CSS kai tsaye a abubuwan HTML.\nMisali, don canza launin kanun labarai, za ka iya amfani da:"
+                        },
+                        {
+                            "type": "text",
+                            "title": "Siffofin Style na HTML",
+                            "value": "Saita salon wani abu na HTML ana yin sa ta amfani da siffofin style.\nSiffofin style na HTML suna da tsarin rubutu kamar haka:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misali",
+                            "value": "<tagname style=\"property:value;\">"
+                        }
+                    ]
+                },
+                {
+                    "page": 2,
+                    "title": "Salonnin HTML",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title": "Launin Baya",
+                            "value": "Siffofin CSS background-color suna bayyana launin baya ga wani abu na HTML."
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misalin HTML5",
+                            "value": "<body style=\"background-color:blue;\">\n<h1>Wannan kanun labarai ne</h1>\n<p>Wannan sakin layi ne.</p>\n</body>"
+                        },
+                        {
+                            "type": "text",
+                            "title": "Launin Rubutu",
+                            "value": "Siffofin CSS color suna bayyana launin rubutu ga wani abu na HTML."
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misalin Launin Rubutu",
+                            "value": "<h1 style=\"color:blue;\">Wannan kanun labarai ne</h1>\n<p style=\"color:red;\">Wannan sakin layi ne.</p>"
+                        },
+                        {
+                            "type": "text",
+                            "title": "Fonts",
+                            "value": "Siffofin CSS font-family suna bayyana font da za a yi amfani da shi ga wani abu na HTML:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misali",
+                            "value": "<h1 style=\"font-family:verdana;\">Wannan kanun labarai ne</h1>\n<p style=\"font-family:courier;\">Wannan sakin layi ne.</p>"
+                        },
+                        {
+                            "type": "text",
+                            "title": "Girman Font",
+                            "value": "Siffofin CSS font-size suna bayyana girman font ga wani abu na HTML:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misalin Girman Font",
+                            "value": "<h1 style=\"font-size:30px;\">Wannan kanun labarai ne</h1>\n<p style=\"font-size:20px;\">Wannan sakin layi ne.</p>"
+                        },
+                        {
+                            "type": "text",
+                            "title": "Daidaita Rubutu",
+                            "value": "Siffofin CSS text-align suna bayyana daidaiton rubutu a tsaye ga wani abu na HTML:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misalin Daidaita Rubutu",
+                            "value": "<h1 style=\"text-align:center;\">Wannan kanun labarai ne</h1>\n<p style=\"text-align:right;\">Wannan sakin layi ne.</p>"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Launuka na HTML",
+            "unlocked": true,
+            "content": [
+                {
+                    "page": 1,
+                    "title": "Launuka na HTML",
+                    "content": [
+                        {
+                            "type": "text",
+                            "value": "A wannan babi za mu nuna yadda ake amfani da launuka a HTML.\nKada ka damu idan muka yi amfani da alamun da ba ka koya ba tukuna. Za a bayyana su a babi na gaba.\n\nZa ka iya gwada waɗannan misalan a cikin fayil ɗin HTML naka ko a cikin editan HTML na kan layi."
+                        },
+                        {
+                            "type": "text",
+                            "title": "Launukan HTML",
+                            "value": "Ana iya bayyana launuka a HTML ta hanyoyi kamar:\n- Sunan launi - kamar \"red\"\n- Kima ta HEX - kamar \"#ff0000\"\n- Kima ta RGB - kamar \"rgb(255,0,0)\"\n- Kima ta HSL - kamar \"hsl(0, 100%, 50%)\""
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misali",
+                            "value": "<h1 style=\"color:blue;\">Wannan kanun labarai ne</h1>\n<p style=\"color:#ff0000;\">Wannan sakin layi ne.</p>\n<p style=\"color:rgb(0,255,0);\">Wannan wani sakin layi ne.</p>\n<p style=\"color:hsl(240,100%,50%);\">Wannan wani sakin layi ne kuma.</p>"
+                        }
+                    ]
+                },
+                {
+                    "page": 2,
+                    "title": "Launin Baya, Rubutu da Gefuna",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title": "Launin Baya",
+                            "value": "Siffofin CSS background-color suna bayyana launin baya ga wani abu na HTML."
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misali",
+                            "value": "<h1 style=\"background-color:DodgerBlue;\">Hello World</h1>\n<p style=\"background-color:Tomato;\">Lorem ipsum...</p>"
+                        },
+                        {
+                            "type": "text",
+                            "title": "Launin Rubutu",
+                            "value": "Za ka iya saita launin rubutu:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misalin Launin Rubutu",
+                            "value": "<h1 style=\"color:Tomato;\">Hello World</h1>\n<p style=\"color:DodgerBlue;\">Lorem ipsum...</p>\n<p style=\"color:MediumSeaGreen;\">Ut wisi enim...</p>"
+                        },
+                        {
+                            "type": "text",
+                            "title": "Launin Gefe",
+                            "value": "Za ka iya saita launin gefuna:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misalin Launin Gefe",
+                            "value": "<h1 style=\"border:2px solid DodgerBlue;\">Hello World</h1>\n<p style=\"border:2px solid Tomato;\">Lorem ipsum...</p>\n<p style=\"border:2px solid MediumSeaGreen;\">Ut wisi enim...</p>"
+                        }
+                    ]
+                },
+                {
+                    "page": 3,
+                    "title": "Kimanin Launi",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title": "Sunan Launi",
+                            "value": "Za ka iya amfani da sunayen launi a HTML:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misali",
+                            "value": "<h1 style=\"color:blue;\">Wannan kanun labarai ne</h1>\n<p style=\"color:red;\">Wannan sakin layi ne.</p>\n<p style=\"color:green;\">Wannan wani sakin layi ne.</p>"
+                        },
+                        {
+                            "type": "text",
+                            "title": "Kima ta HEX",
+                            "value": "Za ka iya amfani da kima ta HEX a HTML:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misali",
+                            "value": "<h1 style=\"color:#0000FF;\">Wannan kanun labarai ne</h1>\n<p style=\"color:#FF0000;\">Wannan sakin layi ne.</p>\n<p style=\"color:#008000;\">Wannan wani sakin layi ne.</p>"
+                        },
+                        {
+                            "type": "text",
+                            "title": "Kima ta RGB",
+                            "value": "Za ka iya amfani da kima ta RGB a HTML:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misali",
+                            "value": "<h1 style=\"color:rgb(0,0,255);\">Wannan kanun labarai ne</h1>\n<p style=\"color:rgb(255,0,0);\">Wannan sakin layi ne.</p>\n<p style=\"color:rgb(0,128,0);\">Wannan wani sakin layi ne.</p>"
+                        },
+                        {
+                            "type": "text",
+                            "title": "Kima ta HSL",
+                            "value": "Za ka iya amfani da kima ta HSL a HTML:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misali",
+                            "value": "<h1 style=\"color:hsl(240,100%,50%);\">Wannan kanun labarai ne</h1>\n<p style=\"color:hsl(0,100%,50%);\">Wannan sakin layi ne.</p>\n<p style=\"color:hsl(120,100%,25%);\">Wannan wani sakin layi ne.</p>"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "title": "HTML da CSS",
+            "unlocked": true,
+            "content": [
+                {
+                    "page": 1,
+                    "title": "Salon HTML da CSS",
+                    "content": [
+                        {
+                            "type": "text",
+                            "value": "CSS na nufin Cascading Style Sheets.\nCSS tana adana aiki mai yawa. Tana iya sarrafa tsarin shafuka da dama na yanar gizo lokaci guda."
+                        },
+                        {
+                            "type": "text",
+                            "title": "Menene CSS?",
+                            "value": "CSS tana nufin Cascading Style Sheets. Tare da CSS, za ka iya sarrafa launi, font, girman rubutu, tazara tsakanin abubuwa, yadda abubuwa suke tsaye da tsara su, hotunan baya ko launuka da za a yi amfani da su, daban-daban nunawa ga na’urori da girman allo, da sauran abubuwa da yawa!"
+                        },
+                        {
+                            "type": "text",
+                            "title": "Amfani da CSS",
+                            "value": "Ana iya ƙara CSS ga takardun HTML ta hanyoyi guda 3:\n- Inline - ta amfani da siffofin style a cikin abubuwan HTML\n- Internal - ta amfani da <style> a cikin <head>\n- External - ta amfani da <link> don haɗa fayil ɗin CSS na waje\nHanyar da aka fi amfani da ita ita ce ajiyar salon a fayilolin CSS na waje. Amma a wannan darasin za mu yi amfani da inline da internal styles, saboda yana da sauƙin nuna misalai da kuma gwadawa."
+                        }
+                    ]
+                },
+                {
+                    "page": 2,
+                    "title": "Inline CSS",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title": "Inline CSS",
+                            "value": "Inline CSS ana amfani da shi don sanya salo na musamman ga wani abu na HTML guda.\nInline CSS yana amfani da siffofin style na abu na HTML.\nMisali mai zuwa yana sa launin rubutu na <h1> ya zama shuɗi, kuma launin rubutu na <p> ya zama ja:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misali",
+                            "value": "<h1 style=\"color:blue;\">Kanun Labarai Shuɗi</h1>\n<p style=\"color:red;\">Sakin layi ja.</p>"
+                        }
+                    ]
+                },
+                {
+                    "page": 3,
+                    "title": "Internal CSS",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title": "Internal CSS",
+                            "value": "Internal CSS ana amfani da shi don bayyana salo ga shafi guda na HTML.\nAna bayyana internal CSS a cikin <head> na shafin HTML, a cikin <style>.\nMisali mai zuwa yana sa launin rubutu na duk <h1> a wannan shafi ya zama shuɗi, kuma launin duk <p> ya zama ja. Hakanan shafin zai kasance da launin baya powderblue."
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misali",
+                            "value": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nh1 {color: blue;}\np {color: red;}\n</style>\n</head>\n<body>\n<h1>Kanun Labarai Shuɗi</h1>\n<p>Sakin layi ja.</p>\n</body>\n</html>"
+                        }
+                    ]
+                },
+                {
+                    "page": 4,
+                    "title": "External CSS",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title": "Hanyar External",
+                            "value": "External style sheet ana amfani da shi don bayyana salo ga shafuka da yawa na HTML.\nDon amfani da external style sheet, a haɗa hanyar zuwa gare shi a cikin <head> na kowane shafi:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misali",
+                            "value": "<!DOCTYPE html>\n<html>\n<head>\n <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n<h1>Wannan kanun labarai ne</h1>\n<p>Wannan sakin layi ne.</p>\n</body>\n</html>"
+                        },
+                        {
+                            "type": "text",
+                            "title": "Fayil ɗin styles.css",
+                            "value": "External style sheet za a iya rubuta shi a kowanne editan rubutu. Fayil ɗin bai kamata ya ƙunshi lambar HTML ba, kuma dole ne a ajiye shi da tsawo .css.\nGa abin da fayil ɗin \"styles.css\" yake kama da shi:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "styles.css",
+                            "value": "body {\nbackground-color: powderblue;\n}\nh1 {\n color: blue;\n}\np {\n color: red;\n}"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Hanyoyin HTML (HTML Links)",
+            "unlocked": true,
+            "content": [
+                {
+                    "page": 1,
+                    "title": "Hanyoyin HTML",
+                    "content": [
+                        {
+                            "type": "text",
+                            "value": "Hanyoyi suna cikin kusan dukkan shafukan yanar gizo. Hanyoyi suna ba masu amfani damar danna su daga shafi zuwa shafi."
+                        },
+                        {
+                            "type": "text",
+                            "title": "Hanyoyin HTML - Hyperlinks",
+                            "value": "Hanyoyin HTML suna nufin hyperlinks.\nZa ka iya danna hanyar kuma ka wuce zuwa wani takarda.\nIdan ka motsa linzamin kwamfuta a kan hanyar, alamar linzamin za ta zama ƙaramin hannu.\n\nLura: Hanya ba dole ta zama rubutu ba. Hanya na iya zama hoto ko wani abu na HTML!"
+                        },
+                        {
+                            "type": "text",
+                            "title": "Hanyoyin HTML - Syntax",
+                            "value": "Alamar HTML <a> tana bayyana hyperlink. Ga yadda ake amfani da ita:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misali",
+                            "value": "<a href=\"https://www.example.com\">Wannan hanya ce</a>"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Muhimmin siffa na <a> shine href, wanda ke nuna inda hanyar take.\nRubutun hanyar shine abin da za a ga a ga mai karatu.\nDanna rubutun hanyar zai kai mai karatu zuwa adireshin URL da aka kayyade."
+                        }
+                    ]
+                },
+                {
+                    "page": 2,
+                    "title": "Hanyoyin HTML - Siffar Target",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title": "Hanyoyin HTML - Siffar Target",
+                            "value": "A asali, shafin da aka haɗa zai bayyana a taga na yanzu na browser. Don canza wannan, dole ne ka bayyana wani target daban don hanyar.\nAsalin ƙima shine _self, wanda ke nufin takardar da aka haɗa za ta buɗe a cikin wannan taga/tab ɗin da aka danna.\n\nSauran ƙima don siffar target sun haɗa da:\n- _blank: Buɗe takardar a sabon taga ko tab\n- _parent: Buɗe takardar a frame na uwa\n- _top: Buɗe takardar a cikakken jikin taga"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misali",
+                            "value": "<a href=\"https://www.google.com\" target=\"_blank\">Wannan hanya zata buɗe a sabon tab</a>"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Hotunan HTML",
+            "unlocked": true,
+            "content": [
+                {
+                    "page": 1,
+                    "title": "Hotunan HTML",
+                    "content": [
+                        {
+                            "type": "text",
+                            "value": "Hotuna na iya kyautata bayyanar shafin yanar gizo. Hakanan za a iya amfani da su don nuna abubuwa a rubutu."
+                        },
+                        {
+                            "type": "text",
+                            "title": "Hotunan HTML - Alamar <img>",
+                            "value": "A HTML, hotuna ana bayyana su ta alamar <img>.\nAlamar <img> babu komai a ciki, tana ɗauke da siffofi kawai, ba ta da tag ɗin rufe."
+                        },
+                        {
+                            "type": "text",
+                            "title": "Tsarin Hotunan HTML"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Alamar HTML <img> tana amfani don saka hoto a shafin yanar gizo.\n\nHotuna ba a saka su kai tsaye a shafi ba; ana haɗa hotuna zuwa shafukan yanar gizo. Alamar <img> tana ƙirƙirar wuri don hoton da aka ambata.\nAlamar <img> babu komai a ciki, tana ɗauke da siffofi kawai, ba ta da tag ɗin rufe.\nAlamar <img> tana da siffofi guda biyu da ake buƙata:\nsrc - nuna hanyar hoton\nalt - rubutu madadin don hoton"
+                        },
+                        {
+                            "type": "text",
+                            "title": "Hotunan HTML - Siffofin src",
+                            "value": "Siffar src tana nuna hanyar zuwa hoton da za a nuna."
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misali",
+                            "value": "<img src=\"img.jpg\" alt=\"Hotona\">"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Siffar alt tana bayar da rubutu madadin ga hoto, idan hoton ba zai iya bayyana ba."
+                        }
+                    ]
+                },
+                {
+                    "page": 2,
+                    "title": "Hotunan HTML - Faɗi da Tsawo",
+                    "content": [
+                        {
+                            "type": "text",
+                            "title": "Hotunan HTML - Faɗi da Tsawo",
+                            "value": "Za ka iya amfani da siffofin width da height don kayyade girman hoto."
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misali",
+                            "value": "<img src=\"img.jpg\" alt=\"Hotona\" width=\"300\" height=\"200\">"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Hakanan, za ka iya amfani da siffar style don kayyade faɗi da tsawon hoto."
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Misali",
+                            "value": "<img src=\"img.jpg\" alt=\"Hotona\" style=\"width:300px;height:200px;\">"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+    "id": 8,
+    "title": "Maballin HTML",
+    "unlocked": true,
+    "content": [
+        {
             "page": 1,
-            "title": "Miye HTML?",
+            "title": "Maballin HTML",
             "content": [
                 {
-                "type": "text",
-                "title": "Gabatar da HTML",
-                "value": "HTML ya na nufin HyperText Markup Language. It is the standard language for creating web pages. \n HTML describes the structure of a webpage using markup. \n It consists of a series of elements that tell the browser how to display content."
+                    "type": "text",
+                    "value": "Maballin suna da za a iya danna su. Ana iya amfani da su don aika fom, kunna ayyuka, ko shiga shafuka daban-daban."
+                },
+                {
+                    "type": "text",
+                    "title": "Maballin HTML - Tag <button>",
+                    "value": "A HTML, maballin ana ƙirƙirarsa da tag <button>.\nTag <button> na iya ɗaukar rubutu ko hoto, kuma yana da tag rufe."
+                },
+                {
+                    "type": "text",
+                    "title": "Tsarin Maballin HTML"
+                },
+                {
+                    "type": "text",
+                    "value": "Tag <button> yana ƙirƙirar maballin da za a iya danna.\nTag <button> na iya ɗaukar rubutu ko hoto, kuma yana da tag rufe.\nTag <button> na iya ɗaukar halaye kamar type, onclick, da disabled."
+                },
+                {
+                    "type": "text",
+                    "title": "Maballin HTML - Misali",
+                    "value": "Ga misali na maballin HTML mai sauƙi:"
+                },
+                {
+                    "type": "snippet",
+                    "title": "Misali",
+                    "value": "<button type=\"button\">Danna Ni!</button>"
                 }
             ]
-            },
-            {
+        },
+        {
             "page": 2,
-            "title": "Why Use HTML?",
+            "title": "Nau'ikan Maballin HTML",
             "content": [
                 {
                     "type": "text",
-                    "title": "HTML Documents",
-                    "value": "HTML is essential for web development. It allows you to create structured documents that can be displayed in web browsers. \n\nWith HTML, you can:\n- Create headings, paragraphs, links, images, and other content\n- Structure your content with lists and tables\n- Embed multimedia elements like videos and audio\n- Create forms for user input"
-                }
-            ]
-            },
-            {
-            "page": 3,
-            "title": "A Simple HTML Document",
-            "content": [
-                {
-                "type": "snippet",
-                "title": "HTML Example",
-                "value": "<!DOCTYPE html>\n<html>\n<head>\n<title>Page Title</title>\n</head>\n<body>\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n</body>\n</html>"
+                    "title": "Nau'ikan Maballin HTML",
+                    "value": "Halaye type yana nuna nau'in maballin. Zaɓuɓɓukan sune:\n- button: Maballin da za a iya danna (default)\n- submit: Maballin da ke aika fom\n- reset: Maballin da ke sake saita fom"
                 },
-
                 {
-                "type": "text",
-                "title": "Example Explanation",
-                "value": "The <!DOCTYPE html> declaration defines that this document is an HTML5 document\nThe <html> element is the root element of an HTML page\nThe <head> element contains meta information about the HTML page\nThe <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)\nThe <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.\nThe <h1> element defines a large heading\nThe <p> element defines a paragraph"
-                }
-            ]
-            },
-            {
-            "page": 4,
-            "title": "What is an HTML Element?",
-            "content": [
+                    "type": "snippet",
+                    "title": "Misali",
+                    "value": "<button type=\"button\">Danna Ni!</button>\n<button type=\"submit\">Aika</button>\n<button type=\"reset\">Sake Saita</button>"
+                },
                 {
-                "type": "text",
-                "title": "HTML Elements",
-                "value": "An HTML element is defined by a start tag, some content, and an end tag:\n\nFor example, <p>This is a paragraph.</p> is a paragraph element. \nThe <p> is the start tag, and </p> is the end tag. The content is 'This is a paragraph.'\n\nSome elements can be self-closing, like <img /> or <br />."
-                }
-            ]
-            }
-        ]
-        },
-        {
-        "id":2,
-        "title": "Basic HTML",
-        "unlocked": true,
-        "content": [
-            {
-                "page": 1,
-                "title": "HTML Basic Examples",
-                "content": [
-                    {
                     "type": "text",
-                    "value": "In this chapter we will show some basic HTML examples.\nDon't worry if we use tags you have not learned about yet. They will be explained in later chapters.\n\nYou can try these examples in your own HTML files or in an online HTML editor."
-                    },
-                    {
-                        "type": "text",
-                        "title": "HTML Documents",
-                        "value": "All HTML documents must start with a document type declaration: <!DOCTYPE html>.\nThe HTML document itself begins with <html> and ends with </html>.\nThe visible part of the HTML document is between <body> and </body>."
-                    },
-                    {
-                        "type": "snippet",
-                        "title":"Example",
-                        "value":"<!DOCTYPE html>\n<html>\n<body>\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n</body>\n</html>"
-                    },
-                    {
-                        "title":"The <!DOCTYPE> Declaration",
-                        "type": "text",
-                        "value": "The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.\nIt must only appear once, at the top of the page (before any HTML tags).\nThe <!DOCTYPE> declaration is not case sensitive.\nThe <!DOCTYPE> declaration for HTML5 is:"
-                    },
-                    {
-                        "type": "snippet",
-                        "title": "HTML5 Doctype",
-                        "value": "<!DOCTYPE html>"
-                    }
-                ]
-            },
-            {
-                "page": 2,
-                "title": "Headings",
-                "content": [
-                    {
-                        "type": "text",
-                        "title": "HTML Headings",
-                        "value": "HTML headings are defined with the <h1> to <h6> tags.\n<h1> defines the most important heading. <h6> defines the least important heading: "
-                    },
-                    {
-                        "type": "snippet",
-                        "title": "Heading Example",
-                        "value": "<h1>This is a heading</h1>\n<h2>This is a heading</h2>\n<h3>This is a heading</h3>\n<h4>This is a heading</h4>\n<h5>This is a heading</h5>\n<h6>This is a heading</h6>"
-                    }               
-                ]
+                    "title": "Maballin HTML - Aikin Onclick",
+                    "value": "Halaye onclick yana nuna aikin JavaScript da za a aiwatar lokacin da aka danna maballin."
                 },
                 {
-                "page": 3,
-                "title": "Paragraphs",
-                "content": [
-                    {
-                        "type": "text",
-                        "title": "HTML Paragraphs",
-                        "value": "HTML paragraphs are defined with the <p> tag.\nA paragraph always starts on a new line, and browsers automatically add space before and after any <p> element."
-                    },
-                    {
-                        "type": "snippet",
-                        "title": "Paragraph Example",
-                        "value": "<p>This is a paragraph.</p>\n<p>This is another paragraph.</p>"
-                    }
-                ]
-                },
-                {
-                "page": 4,
-                "title": "Links?",
-                "content": [
-                    {
-                        "type": "text",
-                        "title": "HTML Links",
-                        "value": "HTML links are defined with the <a> tag.\nThe link's destination is specified in the href attribute:"
-                    },
-                    {
-                        "type": "snippet",
-                        "title": "Link Example",
-                        "value": "<a href=\"https://www.example.com\">This is a link</a>"
-                    }
-                ]
-                },
-                {
-                "page": 5,
-                "title": "Images",
-                "content": [
-                    {
-                        "type": "text",
-                        "title": "HTML Images",
-                        "value": "HTML images are defined with the <img> tag.\nThe source file, an alternate text, and dimensions can be specified:"
-                    },
-                    {
-                        "type": "snippet",
-                        "title": "Image Example",
-                        "value": "<img src=\"img.jpg\" alt=\"My Image\" width=\"300\" height=\"200\">"
-                    }
-                ]
-                }
-            ]
-        },
-        {
-        "id":3,
-        "title": "HTML Styles",
-        "unlocked": true,
-        "content": [
-            {
-                "page": 1,
-                "title": "HTML Basic Examples",
-                "content": [
-                    {
-                    "type": "text",
-                    "value": "The HTML style attribute is used to add styles to an element, such as color, font, size, and more.\nYou can use the style attribute to apply CSS styles directly to HTML elements.\nFor example, to change the color of a heading, you can use:"
-                    },
-                    {
-                        "type": "text",
-                        "title": "The HTML Style Attribute",
-                        "value": "Setting the style of an HTML element, can be done with the style attribute.\nThe HTML style attribute has the following syntax:"
-                    },
-                    {
-                        "type": "snippet",
-                        "title":"Example",
-                        "value":"<tagname style=\"property:value;\">"
-                    }
-                ]
-            },
-            {
-                "page": 2,
-                "title": "HTML Styles",
-                "content": [
-                    {
-                        "title":"Background Color",
-                        "type": "text",
-                        "value": "The CSS background-color property defines the background color for an HTML element."
-                    },
-                    {
-                        "type": "snippet",
-                        "title": "HTML5 Doctype",
-                        "value": "<body style=\"background-color:blue;\">\n<h1>This is a heading</h1>\n<p>This is a paragraph.</p>\n</body>"
-                    },
-                    {
-                        "title":"Text Color",
-                        "type": "text",
-                        "value": "The CSS color property defines the text color for an HTML element."
-                    },
-                    {
-                        "type": "snippet",
-                        "title": "Text Color Example",
-                        "value": "<h1 style=\"color:blue;\">This is a heading</h1>\n<p style=\"color:red;\">This is a paragraph.</p>"
-                    },
-                    {
-                        "type": "text",
-                        "title": "Fonts",
-                        "value": "The CSS font-family property defines the font to be used for an HTML element:"
-                    },
-                    {
-                        "type": "snippet",
-                        "title": "Example",
-                        "value": "<h1 style=\"font-family:verdana;\">This is a heading</h1>\n<p style=\"font-family:courier;\">This is a paragraph.</p>"
-                    },      
-                    {
-                        "type": "text",
-                        "title": "Font Size",
-                        "value": "The CSS font-size property defines the size of the font for an HTML element:"
-                    },
-                    {
-                        "type": "snippet",
-                        "title": "Font Size Example",
-                        "value": "<h1 style=\"font-size:30px;\">This is a heading</h1>\n<p style=\"font-size:20px;\">This is a paragraph.</p>"
-                    },       
-                    {
-                        "type": "text",
-                        "title": "Text Alignment",
-                        "value": "The CSS text-align property defines the horizontal alignment of text in an HTML element:"
-                    },
-                    {
-                        "type": "snippet",
-                        "title": "Text Alignment Example",
-                        "value": "<h1 style=\"text-align:center;\">This is a heading</h1>\n<p style=\"text-align:right;\">This is a paragraph.</p>"
-                    }
-                ]
+                    "type": "snippet",
+                    "title": "Misali",
+                    "value": "<button type=\"button\" onclick=\"alert('An Danna Maballin!')\">Danna Ni!</button>"
                 }
             ]
         }
     ]
-    }
+},{
+    "id": 9,
+    "title": "Jadawalin HTML",
+    "unlocked": true,
+    "content": [
+        {
+            "page": 1,
+            "title": "Gabatarwa ga Jadawalai",
+            "content": [
+                {
+                    "type": "text",
+                    "value": "Jadawalai a HTML ana amfani da su don nuna bayanai cikin layuka da ginshikai.\nManyan tags sune <table>, <tr> (layin jadawali), <td> (bayanan jadawali), da <th> (kanun jadawali)."
+                }
+            ]
+        },
+        {
+            "page": 2,
+            "title": "Misalin Jadawali",
+            "content": [
+                {
+                    "type": "snippet",
+                    "title": "Misali",
+                    "value": "<table>\n<tr>\n<th>Suna</th><th>Shekaru</th>\n</tr>\n<tr>\n<td>Alice</td><td>25</td>\n</tr>\n<tr>\n<td>Bob</td><td>30</td>\n</tr>\n</table>"
+                },
+                {
+                    "type": "text",
+                    "value": "Tag <th> yana nuna kanun kolum, yayin da <td> ke nuna sel na al'ada."
+                }
+            ]
+        }
+    ]
+},
+{
+    "id": 10,
+    "title": "Fom na HTML",
+    "unlocked": true,
+    "content": [
+        {
+            "page": 1,
+            "title": "Gabatarwa ga Fom",
+            "content": [
+                {
+                    "type": "text",
+                    "value": "Fom suna tattara bayanan mai amfani. Manyan tags sun hada da <form>, <input>, <textarea>, <button>, da <select>."
+                }
+            ]
+        },
+        {
+            "page": 2,
+            "title": "Misalin Fom",
+            "content": [
+                {
+                    "type": "snippet",
+                    "title": "Misali",
+                    "value": "<form>\n<label>Suna:</label>\n<input type=\"text\" name=\"name\">\n<br>\n<label>Shekaru:</label>\n<input type=\"number\" name=\"age\">\n<br>\n<button type=\"submit\">Aika</button>\n</form>"
+                }
+            ]
+        }
+    ]
+},
+{
+    "id": 11,
+    "title": "HTML Multimedia",
+    "unlocked": true,
+    "content": [
+        {
+            "page": 1,
+            "title": "Gabatarwa ga Multimedia",
+            "content": [
+                {
+                    "type": "text",
+                    "value": "HTML na iya saka abubuwan multimedia kamar bidiyo da sauti cikin shafukan yanar gizo."
+                }
+            ]
+        },
+        {
+            "page": 2,
+            "title": "Bidiyo a HTML",
+            "content": [
+                {
+                    "type": "text",
+                    "title": "Tag na <video>",
+                    "value": "Ana amfani da tag na <video> don saka bidiyo a shafin yanar gizo. Za'a iya saita girman bidiyo da kuma kunna shi ta atomatik."
+                },
+                {
+                    "type": "snippet",
+                    "title": "Misali",
+                    "value": "<video width=\"320\" height=\"240\" controls>\n  <source src=\"movie.mp4\" type=\"video/mp4\">\n  Browser dinka baya goyon bayan bidiyo.\n</video>"
+                }
+            ]
+        },
+        {
+            "page": 3,
+            "title": "Sauti a HTML",
+            "content": [
+                {
+                    "type": "text",
+                    "title": "Tag na <audio>",
+                    "value": "Ana amfani da tag na <audio> don saka sauti a shafin yanar gizo. Za'a iya kunna sautin kai tsaye ko kuma a kula da shi da mai amfani."
+                },
+                {
+                    "type": "snippet",
+                    "title": "Misali",
+                    "value": "<audio controls>\n  <source src=\"audio.mp3\" type=\"audio/mpeg\">\n  Browser dinka baya goyon bayan sauti.\n</audio>"
+                }
+            ]
+        }
+    ]
+},{
+    "id": 12,
+    "title": "HTML Semantic Elements",
+    "unlocked": true,
+    "content": [
+        {
+            "page": 1,
+            "title": "Gabatarwa ga Semantic Tags",
+            "content": [
+                {
+                    "type": "text",
+                    "value": "Semantic HTML na bayar da ma’ana ga abubuwa, kamar <header>, <footer>, <article>, da <section>.\nSuna inganta samun damar amfani da shafin da SEO."
+                }
+            ]
+        },
+        {
+            "page": 2,
+            "title": "Misali na Semantic",
+            "content": [
+                {
+                    "type": "snippet",
+                    "title": "Misali",
+                    "value": "<header>\n  <h1>Shafin Yanar Gizo Na</h1>\n</header>\n<section>\n  <article>\n    <h2>Sunan Labari</h2>\n    <p>Abubuwan da ke ciki an saka a nan.</p>\n  </article>\n</section>\n<footer>\n  <p>© 2025 Shafin Yanar Gizo Na</p>\n</footer>"
+                }
+            ]
+        }
+    ]
+},
+{
+    "id": 13,
+    "title": "HTML Best Practices",
+    "unlocked": true,
+    "content": [
+        {
+            "page": 1,
+            "title": "Mafi Kyawun Hanyoyi",
+            "content": [
+                {
+                    "type": "text",
+                    "value": "Bi waɗannan mafi kyawun hanyoyi:\n- Yi amfani da semantic tags don tsari mai kyau\n- Tsabtace kuma a sauƙaƙa karanta lambar\n- Kara alt attributes ga hotuna\n- Tabbatar da lambar HTML ɗinka\n- Tsara fayiloli da babban fayil yadda ya kamata"
+                }
+            ]
+        },
+        {
+            "page": 2,
+            "title": "Misali na Tsabta HTML",
+            "content": [
+                {
+                    "type": "snippet",
+                    "title": "Misali",
+                    "value": "<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Mai Tsabta</title>\n</head>\n<body>\n  <header><h1>Shafin Sama</h1></header>\n  <section><p>Barka da zuwa shafina!</p></section>\n  <footer><p>© 2025 Shafin Yanar Gizo Na</p></footer>\n</body>\n</html>"
+                }
+            ]
+        }
+    ]
+}
+    ]
+}
