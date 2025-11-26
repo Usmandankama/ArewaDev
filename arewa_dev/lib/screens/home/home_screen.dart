@@ -22,18 +22,35 @@ class _HomeScreenState extends State<HomeScreen> {
       resizeToAvoidBottomInset: false,
       backgroundColor: AppColors.backgroundColor,
       appBar: AppBar(
+        toolbarHeight: 100.h,
         backgroundColor: AppColors.backgroundColor,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            IconButton(
-              icon: Icon(Icons.menu, color: Colors.white, size: 30.sp),
-              onPressed: () {
-                // Handle menu button press
-              },
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Welcome, ',
+                  style: GoogleFonts.playfairDisplay(
+                    color: AppColors.textPrimary,
+                    fontSize: 28.sp,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  'Usman Dankama, ',
+                  style: GoogleFonts.playfairDisplay(
+                    color: AppColors.textPrimary,
+                    fontSize: 28.sp,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
             ),
+
             CircleAvatar(
-              radius: 20.sp,
+              radius: 25.sp,
               backgroundImage: AssetImage('assets/images/avatar1.jpeg'),
             ),
           ],
@@ -44,22 +61,6 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'Welcome, ',
-              style: GoogleFonts.playfairDisplay(
-                color: AppColors.textPrimary,
-                fontSize: 32.sp,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            Text(
-              'Usman Dankama, ',
-              style: GoogleFonts.playfairDisplay(
-                color: AppColors.textPrimary,
-                fontSize: 32.sp,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
             SizedBox(height: 50.h),
             Expanded(
               child: GridView(
@@ -98,7 +99,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     sectionColor: AppColors.accentBlue,
                     nextScreen: CommunityPage(),
                   ),
-
                   SectionContainer(
                     imagePath: 'assets/icons/projects.png',
                     containerHeight: 120,
@@ -114,16 +114,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 //   // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 //   crossAxisAlignment: CrossAxisAlignment.start,
                 //   children: [
-
                 //   ],
                 // ),
-
                 //   SizedBox(height: 10.h),
                 //   Row(
                 //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 //     crossAxisAlignment: CrossAxisAlignment.start,
                 //     children: [
-
                 //     ],
                 //   ),
               ),

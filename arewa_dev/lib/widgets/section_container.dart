@@ -35,10 +35,8 @@ class _SectionContainerState extends State<SectionContainer> {
         );
       },
       child: Container(
-        // height: widget.containerHeight.h,
         height: 180.h,
         width: 150.h,
-        // width: widget.containerWidth.w,
         padding: EdgeInsets.all(8.sp),
         decoration: BoxDecoration(
           color: widget.sectionColor,
@@ -56,7 +54,16 @@ class _SectionContainerState extends State<SectionContainer> {
               widget.subtitle,
               style: GoogleFonts.montserrat(color:  AppColors.textSecondary, fontSize: 12.sp,fontWeight: FontWeight.w300),
             ),
-            SizedBox(height: 10.h),
+            SizedBox(height: 5.h),
+            Align(
+              alignment: Alignment.bottomLeft,
+              child: Image.asset(
+                widget.imagePath,
+                height: 30.h,
+                width: 30.w,
+                fit: BoxFit.cover,
+              ),
+            ),
           ],
         ),
       ),

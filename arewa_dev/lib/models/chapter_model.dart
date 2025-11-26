@@ -27,7 +27,7 @@ class ChapterModel {
 
 class PageModel {
   final int page;
-  final dynamic title;
+  final String title;
   final List<ContentBlock> content;
 
   PageModel({
@@ -48,9 +48,9 @@ class PageModel {
 }
 
 class ContentBlock {
-  final dynamic type; // "text" or "snippet"
-  final dynamic title;
-  final dynamic value;
+  final String type; // "text" or "snippet"
+  final String? title;
+  final String value;
 
   ContentBlock({
     required this.type,
@@ -58,13 +58,14 @@ class ContentBlock {
     required this.value,
   });
 
-  factory ContentBlock.fromJson(Map<String, dynamic> json) {
-    return ContentBlock(
-      type: json['type'],
-      title: json['title'],
-      value: json['value'],
-    );
-  }
+factory ContentBlock.fromJson(Map<String, dynamic> json) {
+  return ContentBlock(
+    type: json['type'] ?? "",
+    title: json['title'],
+    value: json['value']?.toString() ?? "",
+  );
+}
+
 }
 
 

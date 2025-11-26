@@ -123,7 +123,7 @@ class _LearningScreenState extends State<LearningScreen> {
                       children: [
                         // Page Title
                         Text(
-                          page.title,
+                          page.title ?? "",
                           style: GoogleFonts.playfairDisplay(
                             color: Colors.white,
                             fontSize: 22,
