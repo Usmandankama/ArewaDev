@@ -555,6 +555,216 @@
                     ]
                 }
             ]   
-        }
-    ]
+        },
+        {
+            "id":8,
+            "title": "HTML Buttons",
+            "unlocked": true,
+            "content": [
+                {
+                    "page": 1,
+                    "title": "HTML Buttons",
+                    "content": [
+                        {
+                        "type": "text",
+                        "value":"Buttons are clickable elements that can be used to submit forms, trigger actions, or navigate to different pages."
+                        },
+                        {
+                            "type": "text",
+                            "title": "HTML Buttons - The <button> Tag",
+                            "value": "In HTML, buttons are defined with the <button> tag.\nThe <button> tag can contain text or images, and it has a closing tag."
+                        },
+                        {
+                            "type":"text",
+                            "title":"HTML Buttons Syntax"
+                        },
+                        {
+                            "type": "text",
+                            "value":"The HTML <button> tag is used to create a clickable button.\nThe <button> tag can contain text or images, and it has a closing tag.\nThe <button> tag can also have attributes like type, onclick, and disabled."
+                        },
+                        {
+                            "type": "text",
+                            "title": "HTML Buttons - Example",
+                            "value": "Here is an example of a simple HTML button:"
+                        },
+                        {
+                            "type": "snippet",
+                            "title":"Example",
+                            "value":"<button type=\"button\">Click Me!</button>"
+                        }
+                    ]
+                },
+                {
+                    "page":2,
+                    "title": "HTML Buttons - Types",
+                    "content":[
+                        {
+                            "type": "text",
+                            "title":"HTML Buttons - Types",
+                            "value":"The type attribute specifies the type of button. The possible values are:\n- button: A clickable button (default)\n- submit: A button that submits a form\n- reset: A button that resets a form"
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Example",
+                            "value":"<button type=\"button\">Click Me!</button>\n<button type=\"submit\">Submit</button>\n<button type=\"reset\">Reset</button>"
+                        },
+                        {
+                            "type": "text",
+                            "title":"HTML Buttons - Onclick Event",
+                            "value":"The onclick attribute is used to specify a JavaScript function to be executed when the button is clicked."
+                        },
+                        {
+                            "type": "snippet",
+                            "title": "Example",
+                            "value":"<button type=\"button\" onclick=\"alert('Button Clicked!')\">Click Me!</button>"
+                        }
+                    ]
+                }
+            ]
+        },
+    {
+        "id": 9,
+        "title": "HTML Tables",
+        "unlocked": true,
+        "content": [
+            {
+                "page": 1,
+                "title": "Introduction to Tables",
+                "content": [
+                    {
+                        "type": "text",
+                        "value": "Tables in HTML are used to display data in rows and columns.\nThe main tags are <table>, <tr> (table row), <td> (table data), and <th> (table header)."
+                    }
+                ]
+            },
+            {
+                "page": 2,
+                "title": "Table Example",
+                "content": [
+                    {
+                        "type": "snippet",
+                        "title": "Example",
+                        "value": "<table>\n<tr>\n<th>Name</th><th>Age</th>\n</tr>\n<tr>\n<td>Alice</td><td>25</td>\n</tr>\n<tr>\n<td>Bob</td><td>30</td>\n</tr>\n</table>"
+                    },
+                    {
+                        "type": "text",
+                        "value": "The <th> tag defines headers, while <td> defines regular cells."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "title": "HTML Forms",
+        "unlocked": true,
+        "content": [
+            {
+                "page": 1,
+                "title": "Introduction to Forms",
+                "content": [
+                    {
+                        "type": "text",
+                        "value": "Forms collect user input. Common tags include <form>, <input>, <textarea>, <button>, and <select>."
+                    }
+                ]
+            },
+            {
+                "page": 2,
+                "title": "Form Example",
+                "content": [
+                    {
+                        "type": "snippet",
+                        "title": "Example",
+                        "value": "<form>\n<label>Name:</label>\n<input type=\"text\" name=\"name\">\n<br>\n<label>Age:</label>\n<input type=\"number\" name=\"age\">\n<br>\n<button type=\"submit\">Submit</button>\n</form>"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "title": "HTML Multimedia",
+        "unlocked": true,
+        "content": [
+            {
+                "page": 1,
+                "title": "Audio and Video",
+                "content": [
+                    {
+                        "type": "text",
+                        "value": "HTML supports audio and video using <audio> and <video> tags.\nYou can embed files and control playback with attributes like controls, autoplay, and loop."
+                    }
+                ]
+            },
+            {
+                "page": 2,
+                "title": "Multimedia Example",
+                "content": [
+                    {
+                        "type": "snippet",
+                        "title": "Example",
+                        "value": "<audio controls>\n  <source src=\"song.mp3\" type=\"audio/mpeg\">\n</audio>\n<video width=\"320\" height=\"240\" controls>\n  <source src=\"movie.mp4\" type=\"video/mp4\">\n</video>"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "title": "HTML Semantic Elements",
+        "unlocked": true,
+        "content": [
+            {
+                "page": 1,
+                "title": "Introduction to Semantic Tags",
+                "content": [
+                    {
+                        "type": "text",
+                        "value": "Semantic HTML elements provide meaning to content, like <header>, <footer>, <article>, and <section>.\nThey improve accessibility and SEO."
+                    }
+                ]
+            },
+            {
+                "page": 2,
+                "title": "Semantic Example",
+                "content": [
+                    {
+                        "type": "snippet",
+                        "title": "Example",
+                        "value": "<header>\n  <h1>My Website</h1>\n</header>\n<section>\n  <article>\n    <h2>Article Title</h2>\n    <p>Content goes here.</p>\n  </article>\n</section>\n<footer>\n  <p>© 2025 My Website</p>\n</footer>"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "title": "HTML Best Practices",
+        "unlocked": true,
+        "content": [
+            {
+                "page": 1,
+                "title": "Best Practices",
+                "content": [
+                    {
+                        "type": "text",
+                        "value": "Follow these best practices:\n- Use semantic tags for better structure\n- Keep your code clean and readable\n- Add alt attributes for images\n- Validate your HTML code\n- Organize files and folders properly"
+                    }
+                ]
+            },
+            {
+                "page": 2,
+                "title": "Example Clean HTML",
+                "content": [
+                    {
+                        "type": "snippet",
+                        "title": "Example",
+                        "value": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Clean HTML</title>\n</head>\n<body>\n  <header><h1>Site Header</h1></header>\n  <section><p>Welcome to my website!</p></section>\n  <footer><p>© 2025 My Website</p></footer>\n</body>\n</html>"
+                    }
+                ]
+            }
+        ]
+    }
+]
 }
